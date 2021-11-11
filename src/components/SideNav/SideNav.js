@@ -14,7 +14,7 @@ export default function SideNav() {
       <Link to="#" onClick={showSideBar} className="mobile-only"><FaBars /></Link>
 
       <div className={sideBar ? 'navigation show' : 'navigation hidden'}>
-        <Link className="closeButton" to="#" onClick={showSideBar}>
+        <Link className="closeButton mobile-only" to="#" onClick={showSideBar}>
           <FaChevronLeft />
           <span>Fechar menu</span>
         </Link>
@@ -23,8 +23,8 @@ export default function SideNav() {
             return (
               <li key={index}>
                 <NavLink activeClassName="active" to={item.path} className={item.cName} onClick={showSideBar}>
-                  {item.icon}
-                  <span>{item.title}</span>
+                  <span className="nav-icon">{item.icon}</span>
+                  <span className="nav-title">{item.title}</span>
                 </NavLink>
               </li>
             )

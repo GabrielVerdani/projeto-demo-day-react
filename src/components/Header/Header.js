@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import { FaSearch, FaShoppingCart } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './header.scss'
@@ -9,6 +11,8 @@ import defaultProfile from '../../assets/default-profile.png'
 import SideNav from '../SideNav/SideNav'
 
 export default function Header() {
+  const [showHeader, setShowHeader] = useState(true)
+
   return (
     <div className="header">
       <div>
@@ -25,7 +29,7 @@ export default function Header() {
       </form>
 
       <div>
-        <a href="#"><FaShoppingCart /></a>
+        <a href="#" className="shopping-cart"><FaShoppingCart /></a>
         <a href="#"><img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" /></a>
       </div>
     </div>

@@ -4,12 +4,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   background-color: white;
   box-shadow: 10px 0 $primary;
   transition: transform 0.5s;
-
 
   &.hidden {
     transform: translateX(calc(-100% - 10px));
@@ -49,9 +48,10 @@
     font-size: 1.5rem;
     border-radius: 25px;
 
-    span {
+    .nav-title {
       font-size: 1rem;
       margin-left: 10px;
+      white-space: nowrap;
     }
 
     &:hover {
@@ -67,8 +67,43 @@
 
 @media screen and (min-width:1024px) {
   .mobile-only {
-    display: none;
+    display: none !important; 
+  }
+
+  .navigation {
+    width: 60px;
+    overflow-x: hidden;
+
+    transition: width 0.5s;
+
+    &:hover {
+      width: 300px;
+    }
+    
+    &.hidden {
+      display: block;
+      transform: translate(0);
+    }
+
+    .nav-item {
+      padding: 0;
+      color: $very-dark-primary;
+      text-decoration: none;
+      font-size: 1.5rem;
+      border-radius: 25px;
+
+      .nav-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-left: 2.5px;  
+      }
+  
+      .nav-title {
+        font-size: 1rem;
+        margin-left: 10px;
+      }
+    }
   }
 }
-
-
