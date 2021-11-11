@@ -4,3 +4,13 @@
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
 }
+
+.desktop-only {
+  display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none !important; 
+  }
+}

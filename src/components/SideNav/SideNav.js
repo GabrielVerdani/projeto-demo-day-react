@@ -9,6 +9,7 @@ export default function SideNav() {
   const [sideBar, setSideBar] = useState(false);
 
   const showSideBar = () => setSideBar(!sideBar);
+
   return (
     <div>
       <Link to="#" onClick={showSideBar} className="mobile-only"><FaBars /></Link>

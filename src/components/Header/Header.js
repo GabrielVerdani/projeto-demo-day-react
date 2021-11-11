@@ -11,19 +11,18 @@ import defaultProfile from '../../assets/default-profile.png'
 import SideNav from '../SideNav/SideNav'
 
 export default function Header() {
-  const [showHeader, setShowHeader] = useState(true)
 
   return (
     <div className="header">
       <div>
         <SideNav />
         <Link to="/">
-          <img src={imageLogo} alt="Logo VOA" />
+          <img src={imageLogo} alt="Logo VOA" className="image-logo" />
           <img src={textLogo} alt="Logo VOA" className="desktop-only" />
         </Link>
       </div>
 
-      <form action="">
+      <form action="/pesquisa">
         <input type="text" name="busca" id="searchBar" placeholder="Buscar..." />
         <button type="submit"><FaSearch /></button>
       </form>

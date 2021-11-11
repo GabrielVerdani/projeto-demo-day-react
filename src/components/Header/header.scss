@@ -66,6 +66,13 @@
       border: 0;
       border-radius: 0 5px 5px 0;
       padding: 10px;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary;
+        color: white;
+      }
     }
   }
 
@@ -77,19 +84,20 @@
   }
 }
 
-.desktop-only {
-  display: none;
-}
-
 @media screen and (min-width: 1024px) {
   .header {
     height: 60px;
     padding-left: 70px;
+    padding-right: 20px;
 
     .desktop-only {
-      display: inline-block;
+      display: inline-block !important;
     }
 
+    .image-logo {
+      margin-right: 10px;
+    }
+    
     .shopping-cart {
       font-size: 2rem;
       margin-right: 20px;
