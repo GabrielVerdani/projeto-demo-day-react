@@ -5,15 +5,14 @@
   left: 0;
   right: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 3fr 1fr;
 
   padding: 10px;
   height: 50px;
 
   background-color: $primary;
-
 
   a {
     color: $secondary;
@@ -21,7 +20,6 @@
   }
 
   a * {
-    display:inline-block;
     vertical-align: middle; 
   }
 
@@ -29,6 +27,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    &:last-child {
+      justify-self: flex-end;
+    }
   }
 
   img {
@@ -40,7 +42,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin: 0 15px;
+    margin: 3px 15px;
     border-radius: 5px;
 
     input {
@@ -74,5 +76,23 @@
     object-fit: cover;
     border-radius: 50%;
   }
+}
 
+.desktop-only {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 60px;
+
+    .desktop-only {
+      display: inline-block;
+    }
+
+    form {
+      input {
+      }
+    }
+  }
 }

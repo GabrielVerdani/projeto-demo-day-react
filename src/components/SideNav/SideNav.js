@@ -11,7 +11,7 @@ export default function SideNav() {
   const showSideBar = () => setSideBar(!sideBar);
   return (
     <div>
-      <Link to="#" onClick={showSideBar}><FaBars /></Link>
+      <Link to="#" onClick={showSideBar} className="mobile-only"><FaBars /></Link>
 
       <div className={sideBar ? 'navigation show' : 'navigation hidden'}>
         <Link className="closeButton" to="#" onClick={showSideBar}>
@@ -22,7 +22,7 @@ export default function SideNav() {
           {SideNavData.map((item, index) => {
             return (
               <li key={index}>
-                <NavLink activeClassName="active" to={item.path} onClick={showSideBar} className={item.cName}>
+                <NavLink activeClassName="active" to={item.path} className={item.cName} onClick={showSideBar}>
                   {item.icon}
                   <span>{item.title}</span>
                 </NavLink>

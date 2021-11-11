@@ -1,6 +1,6 @@
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import SideNav from "./components/SideNav/SideNav";
+import Footer from "./components/Footer/Footer";
+
 import Index from "./views/Index/Index";
 import CadastroLoja from './views/CadastroLoja/CadastroLoja'
 import Loja from './views/Loja/Loja'
