@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import SideNav from "./components/SideNav/SideNav";
+import Index from "./views/Index/Index";
+import CadastroLoja from './views/CadastroLoja/CadastroLoja'
+import Loja from './views/Loja/Loja'
+import Pesquisa from './views/Pesquisa/Pesquisa'
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import './App.scss'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <Header />
 
-export default App;
+      <Routes>
+        <Route path="/" exact element={<Index />} />
+        <Route path="/cadastroloja" element={<CadastroLoja />} />
+        <Route path="/pesquisa" element={<Pesquisa />} />
+        <Route path="/loja" element={<Loja />} />
+      </Routes>
+
+      <Footer />
+    </Router>
+  );
+};

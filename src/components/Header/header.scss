@@ -1,0 +1,78 @@
+@import "../../colors";
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+  height: 50px;
+
+  background-color: $primary;
+
+
+  a {
+    color: $secondary;
+    font-size: 1.5rem;
+  }
+
+  a * {
+    display:inline-block;
+    vertical-align: middle; 
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+    height: 40px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0 15px;
+    border-radius: 5px;
+
+    input {
+      width: 100%;
+      border: 0;
+      border-radius: 5px 0 0 5px;
+      padding: 5px 15px;
+
+      &:focus {
+        outline: 0;
+
+        +button {
+          background: $secondary;
+          color: white;
+        }
+      }
+    }
+
+    button {
+      background: white;
+      color: $primary;
+      border: 0;
+      border-radius: 0 5px 5px 0;
+      padding: 5px;
+    }
+  }
+
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+}

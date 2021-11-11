@@ -1,0 +1,67 @@
+@import '../../colors';
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 10px 0 $primary;
+  transition: transform 0.5s;
+
+
+  &.hidden {
+    transform: translateX(calc(-100% - 10px));
+  }
+  
+  &.show {
+    display: block;
+  }
+
+  .closeButton {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    color: white;
+    background-color: $primary;
+    text-decoration: none;
+    
+    span {
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+  }
+
+  ul {
+    padding: 20px 5px;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 1rem;
+    color: $very-dark-primary;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 25px;
+
+    span {
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background-color: $little-dark-white;
+    }
+
+    &.active {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}
+
+
