@@ -1,5 +1,5 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import Index from "./views/Index/Index";
 import CadastroLoja from './views/CadastroLoja/CadastroLoja'
@@ -8,7 +8,7 @@ import Pesquisa from './views/Pesquisa/Pesquisa'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import './App.scss'
+import './styles/App.scss'
 
 export default function App() {
   return (

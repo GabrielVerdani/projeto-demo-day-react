@@ -1,0 +1,13 @@
+.product-list {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 30px;
+  padding: 30px;
+
+  background-color: $little-dark-white;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 1024px) {
+}
