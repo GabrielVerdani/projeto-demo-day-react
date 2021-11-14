@@ -1,4 +1,50 @@
 @import "../styles/colors";
 
 .footer-container {
+  background-color: $primary;
+  
+  .wrapper {
+    padding: 50px 5px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width:1024px){
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      padding-left: 60px;
+
+      .contact {
+        order: -1;
+        align-self: center;
+      }
+
+      .about, .categories, .help {
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      div {
+        margin-bottom: 30px;
+      } 
+    }
+
+    h2 {
+      color: $secondary;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    img {
+      width: 100px;
+    }
+  }
 }

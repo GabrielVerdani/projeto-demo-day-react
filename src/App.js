@@ -1,10 +1,10 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import Index from "./views/Index/Index";
-import CadastroLoja from './views/CadastroLoja/CadastroLoja'
-import Loja from './views/Loja/Loja'
-import Pesquisa from './views/Pesquisa/Pesquisa'
+import Index from "./views/Index";
+import CadastroLoja from './views/CadastroLoja'
+import Loja from './views/Loja'
+import Pesquisa from './views/Pesquisa'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,9 +17,9 @@ export default function App() {
 
       <Routes>
         <Route path="/" exact element={<Index />} />
-        <Route path="/cadastroloja" element={<CadastroLoja />} />
-        <Route path="/pesquisa" element={<Pesquisa />} />
-        <Route path="/loja" element={<Loja />} />
+        <Route path="/cadastroloja" exact element={<CadastroLoja />} />
+        <Route path="/pesquisa" exact element={<Pesquisa />} />
+        <Route path="/loja" exact element={<Loja />} />
       </Routes>
 
       <Footer />

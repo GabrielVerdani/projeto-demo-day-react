@@ -23,7 +23,7 @@ export default function SideNav() {
           {SideNavData.map((item, index) => {
             return (
               <li key={index}>
-                <NavLink activeClassName="active" to={item.path} className={item.cName} onClick={switchSideBar}>
+                <NavLink activeclassname="active" to={item.path} className={item.cName} onClick={switchSideBar}>
                   <span className="nav-icon">{item.icon}</span>
                   <span className="nav-title">{item.title}</span>
                 </NavLink>

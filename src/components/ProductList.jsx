@@ -1,5 +1,4 @@
 import ProductItem from "./ProductItem"
-import "react-multi-carousel/lib/styles.css";
 
 export default function ProductList(props) {
 
@@ -11,10 +10,10 @@ export default function ProductList(props) {
             <div key={product.id}>
               <ProductItem
                 id={product.id}
-                image={product.image_url}
-                title={product.title}
-                description={product.description}
-                price={product.price} />
+                image={product.foto_produto}
+                title={product.nome}
+                description={product.descricao}
+                price={product.preco} />
             </div>
           )
         })}
