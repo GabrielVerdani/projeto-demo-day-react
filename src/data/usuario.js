@@ -1,6 +1,6 @@
 import { loja } from "./loja"
 
-export const users = [
+export const usuario = [
   {
     id: 1,
     id_loja: loja.find(l => l.id_usuario === 1) || null,

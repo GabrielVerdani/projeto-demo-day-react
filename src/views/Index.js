@@ -1,12 +1,7 @@
 import ProductList from "../components/ProductList";
 import { produto } from "../data/produto";
 
-import { users } from "../data/usuario"
-
 export default function Index() {
-  for (let i in users) {
-    console.log(users[i])
-  }
   return (
     <div className="index-page">
 
