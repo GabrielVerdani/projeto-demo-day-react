@@ -25,7 +25,7 @@ export const produto = [
   {
     id: 3,
     id_categoria: categoria.find(c => c.id = 1),
-    foto_produto: 'https://github.com/Larissavitoria0.png',
+    foto_produto: 'https://github.com/IgorVinnycius1.png',
     id_loja: 1,
     nome: "Cadeira",
     descricao: "4 pernas",
@@ -46,7 +46,7 @@ export const produto = [
     id: 5,
     id_loja: 2,
     id_categoria: categoria.find(c => c.id = 4),
-    foto_produto: 'https://github.com/IgorVinnycius1.png',
+    foto_produto: 'https://github.com/Larissavitoria0.png',
     nome: "iPhone X",
     descricao: "Um celular aí",
     preco: "4099,99",
