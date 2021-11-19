@@ -24,7 +24,12 @@ export default function Produto() {
             const user = usuario.find(u => u.id === aval.id_usuario);
 
             return (
-              <RatingBox img="" />
+              <RatingBox
+                img={user.foto_usuario}
+                nome={user.nome}
+                comentario={aval.comentario_produto}
+                nota={aval.avaliacao_produto}
+                criado_em={aval.criado_em} />
             )
           })}
         </div>

@@ -1,13 +1,16 @@
 @import 'colors';
 
-@import 'header';
+@import './components/header';
+@import './components/productList';
+@import './components/productItem';
+@import './components/ratingBox';
+@import './components/sidenav';
+@import './components/footer';
+
 @import 'index';
 @import 'loja';
 @import 'produto';
-@import 'productList';
-@import 'productItem';
-@import 'sidenav';
-@import 'footer';
+
 
 * {
   margin: 0;

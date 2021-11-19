@@ -30,7 +30,7 @@ export const usuario = [
   {
     id: 3,
     id_loja: loja.find(l => l.id_usuario === 3) || null,
-    foto_usuario: "https://github.com/gabrielverdani.png",
+    foto_usuario: "https://github.com/rafaelhisu.png",
     nome: "Rafael Silva",
     genero: "Masculino",
     email: "rafaelsilva@gmail.com",
@@ -43,6 +43,7 @@ export const usuario = [
   {
     id: 4,
     id_loja: loja.find(l => l.id_usuario === 4) || null,
+    foto_usuario: "https://github.com/larissavitoria0.png",
     nome: "Larissa Vitoria",
     genero: "Feminino",
     email: "larissavitoria@gmail.com",
@@ -55,6 +56,7 @@ export const usuario = [
   {
     id: 5,
     id_loja: loja.find(l => l.id_usuario === 5) || null,
+    foto_usuario: "https://github.com/igorvinnycius1.png",
     nome: "Igor Vinnycius",
     genero: "Masculino",
     email: "igorvinnycius@gmail.com",
@@ -67,6 +69,7 @@ export const usuario = [
   {
     id: 6,
     id_loja: loja.find(l => l.id_usuario === 6) || null,
+    foto_usuario: "https://github.com/lucaseduardos.png",
     nome: "Lucas Eduardo",
     genero: "Masculino",
     email: "lucaseduardo@gmail.com",
@@ -79,6 +82,7 @@ export const usuario = [
   {
     id: 7,
     id_loja: loja.find(l => l.id_usuario === 7) || null,
+    foto_usuario: "https://github.com/nathanoalbuquerque.png",
     nome: "Nathan Oliveira",
     genero: "Masculino",
     email: "nathanoliveira@gmail.com",
