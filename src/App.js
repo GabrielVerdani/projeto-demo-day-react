@@ -20,6 +20,7 @@ export default function App() {
         <Route path="/cadastroloja" exact element={<CadastroLoja />} />
         <Route path="/pesquisa" exact element={<Pesquisa />} />
         <Route path="/loja" exact element={<Loja />} />
+        <Route path='*' exact element={<Index />} />
       </Routes>
 
       <Footer />

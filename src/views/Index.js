@@ -31,6 +31,7 @@ export default function Index() {
           <ProductList products={produto} />
         </div>
       </div>
+
     </div >
   )
 }
