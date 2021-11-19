@@ -1,10 +1,11 @@
 import ProductItem from "./ProductItem"
+import ScrollContainer from "react-indiana-drag-scroll"
 
 export default function ProductList(props) {
 
   return (
     <div>
-      <div className="product-list">
+      <ScrollContainer className="product-list">
         {props.products.map(product => {
           return (
             <div key={product.id}>
@@ -17,7 +18,7 @@ export default function ProductList(props) {
             </div>
           )
         })}
-      </div>
-    </div>
+      </ScrollContainer>
+    </div >
   )
 }

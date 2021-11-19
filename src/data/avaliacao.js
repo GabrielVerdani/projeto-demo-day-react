@@ -1,9 +1,8 @@
-
 export const avaliacao = [
   {
     id: 1,
     id_produto: 2,
-    usuario: "Emily Sousa",
+    id_usuario: 2,
     avaliacao_produto: 3,
     comentario_produto: "Achei bem meia boca, usei por quase uma semana e já tá rasgando, nota 3",
     criado_em: "2021-11-11",
@@ -12,7 +11,7 @@ export const avaliacao = [
   {
     id: 2,
     id_produto: 2,
-    usuario: "Gabriel Verdani",
+    id_usuario: 1,
     avaliacao_produto: 8,
     comentario_produto: "Muuuito confortável, amei",
     criado_em: "2021-11-11",
@@ -21,7 +20,7 @@ export const avaliacao = [
   {
     id: 3,
     id_produto: 2,
-    usuario: "Nathan Oliveira",
+    id_usuario: 7,
     avaliacao_produto: 1,
     comentario_produto: "veo um rato morto drento da almofada",
     criado_em: "2021-11-11",
@@ -30,7 +29,7 @@ export const avaliacao = [
   {
     id: 4,
     id_produto: 2,
-    usuario: "Larissa Vitoria",
+    id_usuario: 4,
     avaliacao_produto: 10,
     comentario_produto: "COMO TIRA LETRA GRAMDE",
     criado_em: "2021-11-11",

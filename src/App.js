@@ -5,6 +5,7 @@ import Index from "./views/Index";
 import CadastroLoja from './views/CadastroLoja'
 import Loja from './views/Loja'
 import Pesquisa from './views/Pesquisa'
+import Produto from './views/Produto'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/cadastroloja" exact element={<CadastroLoja />} />
         <Route path="/pesquisa" exact element={<Pesquisa />} />
         <Route path="/loja" exact element={<Loja />} />
+        <Route path="/produto" exact element={<Produto />} />
         <Route path='*' exact element={<Index />} />
       </Routes>
 

@@ -4,6 +4,7 @@ export const usuario = [
   {
     id: 1,
     id_loja: loja.find(l => l.id_usuario === 1) || null,
+    foto_usuario: "https://github.com/gabrielverdani.png",
     nome: "Gabriel Verdani",
     genero: null,
     email: "gabrielverdani2002@gmail.com",
@@ -16,6 +17,7 @@ export const usuario = [
   {
     id: 2,
     id_loja: loja.find(l => l.id_usuario === 2) || null,
+    foto_usuario: "https://github.com/emily-sousa.png",
     nome: "Emily Sousa",
     genero: "Feminino",
     email: "emilysousa@gmail.com",
@@ -28,6 +30,7 @@ export const usuario = [
   {
     id: 3,
     id_loja: loja.find(l => l.id_usuario === 3) || null,
+    foto_usuario: "https://github.com/gabrielverdani.png",
     nome: "Rafael Silva",
     genero: "Masculino",
     email: "rafaelsilva@gmail.com",
