@@ -16,16 +16,19 @@ export default function App() {
     <Router>
       <Header />
 
-      <Routes>
-        <Route path="/" exact element={<Index />} />
-        <Route path="/cadastroloja" exact element={<CadastroLoja />} />
-        <Route path="/pesquisa" exact element={<Pesquisa />} />
-        <Route path="/loja" exact element={<Loja />} />
-        <Route path="/produto" exact element={<Produto />} />
-        <Route path='*' exact element={<Index />} />
-      </Routes>
+      <div style={{ minHeight: '100vh' }}>
+        <Routes>
+
+          <Route path="/" exact element={<Index />} />
+          <Route path="/cadastroloja" exact element={<CadastroLoja />} />
+          <Route path="/pesquisa" exact element={<Pesquisa />} />
+          <Route path="/loja" exact element={<Loja />} />
+          <Route path="/produto" exact element={<Produto />} />
+          <Route path='*' exact element={<Index />} />
+        </Routes>
+      </div>
 
       <Footer />
-    </Router>
+    </Router >
   );
 };

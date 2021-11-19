@@ -10,15 +10,15 @@ export default function SideNav() {
 
   return (
     <div>
-      <Link to="#" onClick={switchSideBar} className="sideBarBtn mobile-only">
+      <a href="#" onClick={switchSideBar} className="sideBarBtn mobile-only">
         <FaBars />
-      </Link>
+      </a>
 
       <div className={sideBar ? 'navigation show' : 'navigation hidden'}>
-        <Link className="closeButton mobile-only" to="#" onClick={switchSideBar}>
+        <a className="closeButton mobile-only" href="#" onClick={switchSideBar}>
           <FaChevronLeft />
           <span>Fechar menu</span>
-        </Link>
+        </a>
         <ul>
           {SideNavData.map((item, index) => {
             return (

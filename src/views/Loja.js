@@ -76,7 +76,7 @@ export default function Loja() {
               )
             })}
             <div className="products-end">
-              <span>Sem mais produtos :(</span>
+              <span>{`Sem ${infoLoja.produtos.length !== 0 ? 'mais' : ''} produtos :(`}</span>
             </div>
           </div>
         </div>
