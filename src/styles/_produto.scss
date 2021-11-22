@@ -16,5 +16,12 @@
       text-align: center;
       font-size: 1.5rem;
     }
+
+    .ratings {
+      margin-top: 100px;
+      > div {
+        margin-bottom: 15px;
+      }
+    }
   }
 }

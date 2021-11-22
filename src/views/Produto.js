@@ -1,13 +1,16 @@
 import { produto } from "../data/produto";
+import { loja } from "../data/loja";
 import { usuario } from "../data/usuario";
 
 import { useLocation } from "react-router";
 import RatingBox from "../components/RatingBox";
+import { Link } from "react-router-dom";
 
 export default function Produto() {
   // Pegar informações do produto
   const id = Number(useLocation().search.split('=')[1]) || 1
   const infoProduto = produto.find(p => p.id === id) || produto.find(p => p.id === 1);
+
   return (
     <div className="product-page">
       <div className="wrapper">
@@ -18,20 +21,25 @@ export default function Produto() {
           <h2>Descrição</h2>
           <p>{infoProduto.descricao}</p>
         </div>
+        <div>
+          {loja.find(l => l.id == infoProduto.id).nome}
+        </div>
 
         <div className="ratings">
-          {infoProduto.avaliacoes.map(aval => {
+          <h2>Avaliações</h2>
+          {infoProduto.avaliacoes.length != 0 ? infoProduto.avaliacoes.map(aval => {
             const user = usuario.find(u => u.id === aval.id_usuario);
 
             return (
               <RatingBox
+                key={aval.id}
                 img={user.foto_usuario}
                 nome={user.nome}
                 comentario={aval.comentario_produto}
                 nota={aval.avaliacao_produto}
                 criado_em={aval.criado_em} />
             )
-          })}
+          }) : `Sem avaliações sobre este produto.`}
         </div>
       </div>
     </div>

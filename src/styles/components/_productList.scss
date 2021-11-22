@@ -2,13 +2,9 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  gap: 30px;
-  padding: 30px;
+  gap: 10px;
+  margin-top: 10px;
 
-  background-color: $little-dark-white;
   overflow-x: auto;
   cursor: grab;
-}
-
-@media screen and (min-width: 1024px) {
 }

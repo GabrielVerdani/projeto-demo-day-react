@@ -8,7 +8,7 @@
 
   height: 50px;
 
-  background-color: $primary;
+  background-color: $primary-dark;
   z-index: 100;
 
   .wrapper {
@@ -29,7 +29,7 @@
     .logo *,
     .right-side *,
     .sideBarBtn svg{
-      color: $secondary;
+      color: $primary;
       font-size: 1.5rem;
       vertical-align: middle; 
     }
@@ -45,7 +45,7 @@
     }
 
     img {
-      height: 40px;
+      height: 35px;
     }
 
     form {
@@ -65,23 +65,26 @@
           outline: 0;
 
           +button {
-            background: $secondary;
+            background: $primary;
             color: white;
           }
         }
       }
 
       button {
+        display: flex;
+        align-items: center;
         background: white;
         color: $primary;
         border: 0;
         border-radius: 0 5px 5px 0;
-        padding: 10px;
+        font-size: 1.5rem;
+        padding: 8px;
         transition: 0.2s;
         cursor: pointer;
 
         &:hover {
-          background-color: $secondary;
+          background-color: $primary;
           color: white;
         }
       }
@@ -99,8 +102,7 @@
 @media screen and (min-width: 1024px) {
 
   .header {
-    height: 60px;
-    padding-left: 70px;
+    height: 55px;
     padding-right: 20px;
 
     .wrapper {

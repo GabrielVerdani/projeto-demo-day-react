@@ -2,10 +2,9 @@ import { FaSearch, FaShoppingCart } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 //Import das Imagens
-import imageLogo from '../assets/image-logo.png'
-import textLogo from '../assets/text-logo.png'
+import imageLogo from '../assets/image-logo-blue.png'
+import textLogo from '../assets/text-logo-blue.png'
 import defaultProfile from '../assets/default-profile.png'
-import SideNav from './SideNav'
 
 export default function Header() {
 
@@ -13,7 +12,6 @@ export default function Header() {
     <div className="header">
       <div className="wrapper">
         <div className="left-side">
-          <SideNav />
           <Link to="/" className="logo">
             <img src={imageLogo} alt="Logo VOA" className="image-logo" />
             <img src={textLogo} alt="Logo VOA" className="text-logo" />

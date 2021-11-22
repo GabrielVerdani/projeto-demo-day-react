@@ -4,7 +4,6 @@
 @import './components/productList';
 @import './components/productItem';
 @import './components/ratingBox';
-@import './components/sidenav';
 @import './components/footer';
 
 @import 'index';
@@ -21,6 +20,7 @@
 
 body {
   color: $very-dark-primary;
+  background-color: $little-dark-white;
 }
 
 .desktop-only {
