@@ -1,4 +1,6 @@
 import ProductList from "../components/ProductList";
+import banner from '../assets/banner.png'
+import bannerMobile from '../assets/bannerMobile.png'
 import { produto } from "../data/produto";
 
 export default function Index() {
@@ -6,8 +8,11 @@ export default function Index() {
     <div className="index-page">
 
       <div className="intro-container">
-        <div className="wrapper">
-
+        <div className="bannerDesktop">
+          <img src={banner} alt="Banner com ofertas" />
+        </div>
+        <div className="bannerMobile">
+          <img src={bannerMobile} alt="Banner com ofertas" />
         </div>
       </div>
 
