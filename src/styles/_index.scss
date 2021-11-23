@@ -1,19 +1,19 @@
 .index-page {
   min-height: 100vh;
-  padding-top: 50px;
-  background-color: $very-dark-primary;
-  padding: 50px;
+  padding: 60px 0 50px;
+  background-color: $little-dark-white;
 
   .intro-container {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    background-color: $primary-dark-medium;
 
     img {
       max-width: 1200px;
+      object-fit: contain;
       height: 100%;
       width: 100%;
-      object-fit: contain;
     }
 
     .bannerDesktop, .bannerMobile {
@@ -37,7 +37,7 @@
   .products-container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: $little-dark-white;
+    background-color: $white;
     border-radius: 5px;
 
     .wrapper {
@@ -46,6 +46,7 @@
       padding: 50px;
 
       h2 {
+        color: $primary-dark;
         display: block;
       }
     }

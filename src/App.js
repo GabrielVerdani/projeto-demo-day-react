@@ -6,24 +6,28 @@ import CadastroLoja from './views/CadastroLoja'
 import Loja from './views/Loja'
 import Pesquisa from './views/Pesquisa'
 import Produto from './views/Produto'
+import Cadastro from "./views/Cadastro";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './styles/App.scss'
+import Login from "./views/Login";
+
 
 export default function App() {
   return (
     <Router>
       <Header />
 
-      <div style={{ minHeight: '100vh' }}>
+      <div className="main-content">
         <Routes>
-
           <Route path="/" exact element={<Index />} />
           <Route path="/cadastroloja" exact element={<CadastroLoja />} />
           <Route path="/pesquisa" exact element={<Pesquisa />} />
           <Route path="/loja" exact element={<Loja />} />
           <Route path="/produto" exact element={<Produto />} />
+          <Route path="/cadastro" exact element={<Cadastro />} />
+          <Route path="/entrar" exact element={<Login />} />
           <Route path='*' exact element={<Index />} />
         </Routes>
       </div>

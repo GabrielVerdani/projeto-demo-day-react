@@ -10,10 +10,11 @@
   border-radius: 10px;
 
   background-color: white;
+  border: 2px solid $little-dark-white;
   cursor: pointer;
 
   text-decoration: none;
-  color: $very-dark-primary;
+  color: $primary-darker;
 
   div {
     width: 130px;
@@ -41,10 +42,6 @@
   @media screen and (min-width:1024px) {
     div {
       width: 180px;
-    }
-      
-    &:hover {
-
     }
   }
 }

@@ -1,7 +1,12 @@
-$primary: #2486ff;
-$primary-dark: #04172f;
-$secondary: #FFC700;
-$secondary-dark: #332800;
+$primary: hsl(213, 100%, 50%);
+$primary-medium: hsl(213, 100%, 35%);
+$primary-dark: hsl(213, 100%, 10%);
+$primary-dark-medium: hsl(213, 100%, 4%);
+$primary-darker: hsl(212, 50%, 4%);
 
-$very-dark-primary: #020911;
-$little-dark-white: #eee;
+$secondary: hsl(47, 100%, 50%);
+$secondary-dark: hsl(47, 100%, 10%);
+
+$white: hsl(0, 0%, 100%);
+$little-dark-white: hsl(0, 0%, 91%);
+$gray: hsl(0, 0%, 70%)

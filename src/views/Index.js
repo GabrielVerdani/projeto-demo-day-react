@@ -22,8 +22,18 @@ export default function Index() {
           <ProductList products={produto} />
         </div>
 
-        <div className="wrapper product-list-bottom">
+        <div className="wrapper">
           <h2>Novidades</h2>
+          <ProductList products={produto} />
+        </div>
+
+        <div className="wrapper">
+          <h2>Produtos que estão decolando</h2>
+          <ProductList products={produto} />
+        </div>
+
+        <div className="wrapper">
+          <h2>Produtos que estão decolando</h2>
           <ProductList products={produto} />
         </div>
       </div>

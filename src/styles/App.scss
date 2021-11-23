@@ -6,10 +6,12 @@
 @import './components/ratingBox';
 @import './components/footer';
 
+
 @import 'index';
 @import 'loja';
 @import 'produto';
-
+@import 'cadastro';
+@import 'login';
 
 * {
   margin: 0;
@@ -29,12 +31,18 @@
   background: #aaa;
 }
 ::-webkit-scrollbar-track{
-  background: $very-dark-primary;
+  background: $primary-darker;
 }
 
+
+
 body {
-  color: $very-dark-primary;
+  color: $primary-darker;
   background-color: $little-dark-white;
+}
+
+.main-content {
+  min-height: 100vh;
 }
 
 .desktop-only {
