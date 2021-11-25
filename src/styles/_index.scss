@@ -1,6 +1,6 @@
 .index-page {
   min-height: 100vh;
-  padding: 60px 0 50px;
+  padding: 0 0 50px;
   background-color: $little-dark-white;
 
   .intro-container {
@@ -9,28 +9,29 @@
     cursor: pointer;
     background-color: $primary-dark-medium;
 
-    img {
+    .intro-banner {
       max-width: 1200px;
-      object-fit: contain;
-      height: 100%;
-      width: 100%;
-    }
+      margin: 0 auto;
 
-    .bannerDesktop, .bannerMobile {
-      max-height: 350px;
-    }
-
-    .bannerMobile {
-      display: none;
-    }
-
-    @media screen and (max-width: 800px) {
-      .bannerMobile {
-        display: block;
+      img {
+        max-width: 1200px;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
       }
 
-      .bannerDesktop {
+      .banner-mobile {
         display: none;
+      }
+  
+      @media screen and (max-width: 800px) {
+        .banner-mobile {
+          display: block;
+        }
+  
+        .banner-desktop {
+          display: none;
+        }
       }
     }
   }
@@ -43,7 +44,7 @@
     .wrapper {
       margin: 0 auto;
       max-width: 1200px;
-      padding: 50px;
+      padding: 25px 50px;
 
       h2 {
         color: $primary-dark;

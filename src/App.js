@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -8,13 +10,11 @@ import Pesquisa from './views/Pesquisa'
 import Produto from './views/Produto'
 import Cadastro from "./views/Cadastro";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import './styles/App.scss'
 import Login from "./views/Login";
 
-
 export default function App() {
+
   return (
     <Router>
       <Header />

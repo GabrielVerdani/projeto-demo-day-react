@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
 
-  height: 50px;
+  height: 60px;
 
   background-color: $primary-dark;
   z-index: 100;
@@ -102,8 +102,6 @@
 @media screen and (min-width: 1024px) {
 
   .header {
-    height: 60px;
-    padding-right: 20px;
 
     .wrapper {
       .text-logo {

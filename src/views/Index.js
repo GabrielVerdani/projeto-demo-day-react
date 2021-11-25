@@ -5,29 +5,23 @@ import bannerMobile from '../assets/bannerMobile.png'
 
 import { produto } from "../data/produto";
 
-import Carousel from 'react-elastic-carousel';
+import { Carousel } from "react-bootstrap";
 
 export default function Index() {
   return (
     <div className="index-page">
 
       <div className="intro-container">
-        <Carousel>
-          <div className="bannerDesktop">
+        <Carousel indicators={false} className="intro-banner">
+          <Carousel.Item>
             <img src={banner} alt="Banner com ofertas" />
-          </div>
-          <div className="bannerDesktop">
+          </Carousel.Item>
+          <Carousel.Item>
             <img src={banner} alt="Banner com ofertas" />
-          </div>
-          <div className="bannerDesktop">
+          </Carousel.Item>
+          <Carousel.Item>
             <img src={banner} alt="Banner com ofertas" />
-          </div>
-        </Carousel>
-
-        <Carousel className="bannerMobile">
-          <div className="bannerDesktop">
-            <img src={banner} alt="Banner com ofertas" />
-          </div>
+          </Carousel.Item>
         </Carousel>
       </div>
 
