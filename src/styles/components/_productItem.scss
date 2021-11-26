@@ -4,7 +4,7 @@
 
   width: 180px;
   height: 280px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
 
   background-color: white;
@@ -25,6 +25,7 @@
 
     span {
       background-color: $primary;
+      outline: 1px solid $primary;
     }
   }
 
@@ -50,7 +51,6 @@
   span {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
 
     display: grid;
@@ -62,7 +62,7 @@
     font-weight: bold;
     border-radius: 0 0 5px 5px;
 
-    transition: background-color 100ms;
+    transition: 100ms;
   }
 }
 

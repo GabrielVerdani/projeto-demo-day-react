@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
-import { FaShoppingBag, FaRegEnvelope } from "react-icons/fa"
+import { FaShoppingBag, FaRegEnvelope, FaStar } from "react-icons/fa"
 
 import { produto } from "../data/produto";
 import { usuario } from "../data/usuario";
@@ -31,6 +31,8 @@ export default function Produto() {
     }
   }
 
+  const [rating, setRating] = useState(null);
+  const [hover, setHover] = useState(null);
 
   return (
     <div className="product-page">
@@ -80,13 +82,11 @@ export default function Produto() {
             </div>
 
             <div className="product-info-price">
-              <p>R$ {(infoProduto.preco + infoProduto.preco / 5).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
               <h2>R$ {infoProduto.preco.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</h2>
-              <span>Com VOAcher</span>
             </div>
           </div>
 
-          <button>Adicionar ao carrinho</button>
+          <a href={`https://wa.me/55${infoLoja.contato}?text=${window.location.href}`} target="_blank">Quero esse produto</a>
         </div>
       </div>
 
@@ -134,7 +134,31 @@ export default function Produto() {
           )
         }) : "Esse produto não tem avaliações"}
         <form className="product-rating-form">
-          <textarea name="avaliacao" id="avaliacao" cols="30" rows="10" required></textarea>
+          <div>
+            <h3>Avaliar</h3>
+            {[...Array(5)].map((star, i) => {
+              const ratingValue = i + 1;
+
+              return (
+                <label>
+                  <input
+                    type="radio"
+                    name="rating"
+                    value={ratingValue}
+                    required
+                    onClick={() => setRating(ratingValue)
+                    }
+                  />
+                  <FaStar
+                    className={`product-rating-star ${ratingValue <= (hover || rating) ? "yellow-star" : "gray-star"}`}
+                    onMouseEnter={() => setHover(ratingValue)}
+                    onMouseLeave={() => setHover(null)}
+                  />
+                </label>
+              )
+            })}
+          </div>
+          <textarea name="avaliacao" id="avaliacao" rows="5" maxLength="280" placeholder="Digite sua avaliação aqui..." required></textarea>
           <button type="text">Enviar</button>
         </form>
 

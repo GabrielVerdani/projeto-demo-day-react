@@ -2,11 +2,9 @@ import axios from 'axios';
 
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router'
-import { FaWhatsapp } from 'react-icons/fa'
-import ScrollContainer from 'react-indiana-drag-scroll'
+import { FaRegEnvelope } from 'react-icons/fa'
 
 import { loja } from '../data/loja';
-import ProductItem from '../components/ProductItem'
 
 export default function Loja() {
   useEffect(() => {
@@ -29,62 +27,26 @@ export default function Loja() {
       });
   }, []);
 
-  // Pegar categorias da loja
-  const produtos = infoLoja.produtos;
-  const categorias = [...new Set(produtos.map(produto => produto.categoria))];
-
-
-
   return (
-    <div className="loja-container">
-      <div className="profile">
-        <div className="wrapper">
-          <div>
-            <img src={infoLoja.foto_loja} alt={infoLoja.nome} />
-            <div>
-              <h1>{infoLoja.nome}</h1>
-              <p>{endereco?.logradouro} Nº{infoLoja.numero}</p>
-              <p>{endereco?.bairro}</p>
-              <p>{endereco?.localidade} - {endereco?.uf}</p>
-              <a className="contato" href={`https://wa.me/55${infoLoja.contato}`} target="_blank"><FaWhatsapp />{infoLoja.contato}</a>
-            </div>
-          </div>
+    <div className="loja-page">
+      <div className="loja-profile-box">
+        <img src={infoLoja.foto_loja} alt={infoLoja.nome} />
+        <div className="loja-profile-info">
+          <h1>{infoLoja.nome}</h1>
+          <b>Sla kkkk</b><br />
+          <span><b>{infoLoja.seguidores}</b> {infoLoja.seguidores == 1 ? "Seguidor" : "Seguidores"}</span>
+        </div>
+        <div className="loja-profile-endereco">
+          <p>{endereco ? endereco.logradouro : "..."}</p>
+          <p>Nº{infoLoja.numero || "..."}</p>
+          <p>{endereco ? endereco.bairro : "..."}</p>
+          <p>{endereco ? endereco.localidade : "..."} - {endereco ? endereco.uf : "..."}</p>
+          <a href={`https://wa.me/55${infoLoja.contato}`} target="_blank"><FaRegEnvelope /> Contato</a>
         </div>
       </div>
 
-      <div className="loja-products-container">
-        <header>
-          <div className="wrapper">
-            <input type="text" placeholder="Buscar nessa loja..." />
-            <ScrollContainer className="categories">
-              {categorias.map(c => {
-                return (
-                  <div key={c.id}><button>{c.nome}</button></div>
-                )
-              })}
-            </ScrollContainer>
-          </div>
-        </header>
-        <div className="products">
-          <div className="wrapper">
-            {infoLoja.produtos.map(produto => {
-              return (
-                <div key={produto.id}>
-                  <ProductItem
-                    id={produto.id}
-                    image={produto.foto_produto}
-                    title={produto.nome}
-                    description={produto.descricao}
-                    price={produto.preco} />
-                </div>
-              )
-            })}
-            <div className="products-end">
-              <span>{`Sem ${infoLoja.produtos.length !== 0 ? 'mais' : ''} produtos :(`}</span>
-            </div>
-          </div>
-        </div>
-      </div >
+
+      <div className="loja-profile"></div>
     </div >
   )
 }

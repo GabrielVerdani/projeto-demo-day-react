@@ -1,135 +1,72 @@
-.loja-container {
-  padding: 70px 0 0;
+.loja-page {
+  padding: 25px;
 
-  .profile {
-    text-align: center;
-    padding: 0 10px 20px;
+  p {
+    margin: 0;
+  }
 
-    .wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
+  .loja-profile-box {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 
-      img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 10px solid $primary;
+    img {
+      border-radius: 50%;
+      width: 80%;
+      aspect-ratio: 1;
+      align-self: center;
+    }
+
+    .loja-profile-info {
+      b {
+        color: $primary-dark;
       }
-  
-      .contato {
-        display: inline-flex;
-        align-items: center;
-        background-color: $secondary;
-        color: white;
-        text-decoration: none;
+      span {
+        background-color: $primary-lighter;
         padding: 5px 10px;
-        border-radius: 10px;
+        border-radius: 5px;
+        border: 1px solid $primary-light;
+        position: absolute;
+        bottom: 25px;
+
+        b {
+          color: $primary-medium;
+        }
+      }
+    }
+
+    .loja-profile-endereco {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-self: flex-end;
+      text-align: right;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border: 2px solid $primary-medium;
+        color: $primary-medium;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 5px;
         margin-top: 10px;
+        transition: 100ms;
+        max-width: 150px;
+        align-self: flex-end;
 
         &:hover {
-          filter: brightness(1.1);
+          color: white;
+          background-color: $primary;
+          border: 2px solid $primary;
         }
-        
-        svg {
-          margin-right: 5px;
-        }
-      }
-    }
-  }
-
-  .loja-products-container {
-    background-color: $little-dark-white;
-
-    header {
-      background-color: $primary;
-      padding: 10px;
-
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        margin: 0 auto;
-
-        input {
-          padding: 5px 10px;
-          border: none;
-          border-radius: 5px;
-          margin-bottom: 10px;
-          outline: none;
-
-          &:focus {
-            outline: 2px solid $secondary;
-          }
-        }
-
-        .categories{
-          display: flex;
-          position: relative;
-          flex-shrink: 0;
-          overflow-x: auto;
-          gap: 10px;
-          list-style: none;
-          cursor: grab;
-
-          &::after {
-            content: 0;
-            position: absolute;
-            inset: 0;
-            background: linear-gradient($primary, rgba(0,0,0,0), $primary);
-          }
-
-          div button{
-            background: white;
-            text-transform: uppercase;
-            font-weight: bold;
-            border: none;
-            border-radius: 12px;
-            padding: 2px 5px;
-            color: $primary;
-            cursor: pointer;
-            transition: 0.1s;
-            
-            &:hover {
-              background: $secondary;
-              color: white;
-            }
-          }
-
-          &::-webkit-scrollbar {
-            display: none;
-          }
-        }         
-      }
-    }
-
-    .products .wrapper {
-      display: flex;
-      gap: 35px;
-      flex-wrap: wrap;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-
-      .products-end {
-        text-align: center;
-        width: 100%;
-        color: rgb(119, 119, 119);
-      }
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    padding: 70px 0 0;
-
-    .profile .wrapper {
-      display: flex;
-
-      div:first-child {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        gap: 20px;
       }
     }
   }

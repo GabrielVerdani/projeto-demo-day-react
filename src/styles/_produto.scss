@@ -163,7 +163,7 @@
         }
       }
 
-      button {
+      a {
         background-color: $primary;
         color: white;
         border: none;
@@ -173,6 +173,7 @@
         font-weight: bold;
         align-self: flex-end;
         margin-top: 50px;
+        text-decoration: none;
       }
     }
   }
@@ -235,5 +236,62 @@
     padding: 50px;
     border-radius: 5px;
     margin-top: 25px;
+
+    form {
+      background-color: $primary-lighter;
+      padding: 25px 50px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+
+      h3 {
+        color: $primary-medium;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
+      div {
+        display: flex;
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        outline: none;
+        resize: none;
+        padding: 25px;
+      }
+
+      button {
+        color: white;
+        background-color: $primary;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        align-self: flex-end;
+        margin-top: 25px;
+      }
+      
+      input[type="radio"] {
+        display: none;
+      }
+  
+      .product-rating-star {
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+  
+      .yellow-star {
+        color: $secondary;
+      }
+  
+      .gray-star {
+        color: $gray;
+      }
+    }
   }
 }

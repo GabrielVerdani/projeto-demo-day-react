@@ -25,7 +25,6 @@ export default function Header() {
 
         <div className="right-side">
           <Link to="/cadastro"><img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" /></Link>
-          <a href="#" className="shopping-cart"><FaShoppingCart /></a>
         </div>
       </div>
     </div>
