@@ -14,7 +14,6 @@ import './styles/App.scss'
 import Login from "./views/Login";
 
 export default function App() {
-
   return (
     <Router>
       <Header />

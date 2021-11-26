@@ -9,6 +9,10 @@ import { loja } from '../data/loja';
 import ProductItem from '../components/ProductItem'
 
 export default function Loja() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [useLocation()]);
+
   // Pegar informações da loja
   const id = Number(useLocation().search.split('=')[1]) || 1
   const infoLoja = loja.find(l => l.id === id) || loja.find(l => l.id === 1);

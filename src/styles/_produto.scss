@@ -200,11 +200,40 @@
     .product-ad-box {
       background-color: white;
       border-radius: 5px;
-      padding: 25px;
+      padding: 25px 25px 50px 25px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
 
       h4 {
         color: $primary-medium;
       }
+
+      .product-ad-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;  
+        padding: 5px;
+        background-color: $primary;
+        border: 0;
+        color: white;
+        border-radius: 0 0 5px 5px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+      }
     }
+  }
+
+  .product-rating-box {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 25px;
   }
 }

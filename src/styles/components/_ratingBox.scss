@@ -1,22 +1,44 @@
 .rating-box {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid $little-dark-white;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  padding: 50px 0;
 
-  .user-information {
-    display: flex;
-    align-items: center;
-    
-    .user-image {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 50%;
+  &-profile {
+    width: 80%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  b {
+    font-size: 1.2rem;
+  }
+
+  .yellow-star {
+    color: $secondary;
+  }
+  .gray-star {
+    color: $gray;
+  }
+
+  &-buttons {
+    align-self: flex-end;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: $medium-gray;
+      margin-left: 10px;
     }
   }
 
-  span {
-    align-self: flex-end;
-    color: gray;
+  &:not(:last-child) {
+    border-bottom: 1px solid $light-gray;
   }
 }

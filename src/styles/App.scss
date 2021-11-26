@@ -25,14 +25,14 @@
   width: 10px;
 }
 ::-webkit-scrollbar-thumb{
-  background: #bbb;
+  background: $primary;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background: #aaa;
+  background: $primary-medium;
 }
 ::-webkit-scrollbar-track{
-  background: $primary-darker;
+  background: $primary-dark;
 }
 
 

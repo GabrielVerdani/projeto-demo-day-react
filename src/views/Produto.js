@@ -3,22 +3,34 @@ import { useLocation } from "react-router";
 import { FaShoppingBag, FaRegEnvelope } from "react-icons/fa"
 
 import { produto } from "../data/produto";
+import { usuario } from "../data/usuario";
 import { loja } from "../data/loja";
 import { Link } from "react-router-dom";
 import ProductItem from "../components/ProductItem";
+import RatingBox from "../components/RatingBox";
 
 export default function Produto() {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [useLocation()]);
 
   // Pegar informações do produto
   const id = Number(useLocation().search.split('=')[1]) || 1
   const infoProduto = produto.find(p => p.id === id) || produto.find(p => p.id === 1);
   const infoLoja = loja.find(l => l.id === infoProduto.id_loja);
 
+  let produtosAd = []
+  let counter = 0;
 
-  const produtosAd = (infoLoja.produtos).slice(0, 2);
+  for (let p of infoLoja.produtos) {
+    if (counter < 2) {
+      if (p.id != infoProduto.id) {
+        counter++
+        produtosAd.push(p)
+      }
+    }
+  }
+
 
   return (
     <div className="product-page">
@@ -92,24 +104,39 @@ export default function Produto() {
         </div>
         <div className="product-ad-box">
           <h4>Mais de {infoLoja.nome}:</h4>
-          {produtosAd.map(p => {
-            if (p.id != infoProduto.id) {
-              return (
-                <ProductItem
-                  key={p.id}
-                  id={p.id}
-                  image={p.foto_produto}
-                  title={p.nome}
-                  description={p.descricao}
-                  price={p.preco} />
-              )
-            }
-          })}
+          {produtosAd.length > 1 ? produtosAd.map(p => {
+            return (
+              <ProductItem
+                key={p.id}
+                id={p.id}
+                image={p.foto_produto}
+                title={p.nome}
+                description={p.descricao}
+                price={p.preco} />
+            )
+          }) : "Não há mais produtos"}
+          <Link to={`/loja?id=${infoLoja.id}`} className="product-ad-button">Ver mais</Link>
         </div>
       </div>
 
 
-      <div className="product-ratings-box">
+      <div className="product-rating-box">
+        <h2>Principais avaliações</h2>
+        {infoProduto.avaliacoes.length > 0 ? infoProduto.avaliacoes.map(a => {
+          const user = usuario.find(u => u.id == a.id_usuario);
+          return (
+            <RatingBox
+              nome={user.nome}
+              img={user.foto_usuario}
+              nota={a.avaliacao_produto}
+              comentario={a.comentario_produto}
+            />
+          )
+        }) : "Esse produto não tem avaliações"}
+        <form className="product-rating-form">
+          <textarea name="avaliacao" id="avaliacao" cols="30" rows="10" required></textarea>
+          <button type="text">Enviar</button>
+        </form>
 
       </div>
     </div>

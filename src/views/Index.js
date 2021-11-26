@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router";
+
 import ProductList from "../components/ProductList";
 
 import banner from '../assets/banner.png'
@@ -8,6 +11,10 @@ import { produto } from "../data/produto";
 import { Carousel } from "react-bootstrap";
 
 export default function Index() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [useLocation()]);
+
   return (
     <div className="index-page">
 
