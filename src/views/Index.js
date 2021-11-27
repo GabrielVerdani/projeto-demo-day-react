@@ -3,8 +3,10 @@ import { useLocation } from "react-router";
 
 import ProductList from "../components/ProductList";
 
+import bannerConvite from '../assets/bannerDoComerciante.png'
 import banner from '../assets/banner.png'
 import bannerMobile from '../assets/bannerMobile.png'
+
 
 import { produto } from "../data/produto";
 
@@ -24,7 +26,7 @@ export default function Index() {
             <img src={banner} alt="Banner com ofertas" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={banner} alt="Banner com ofertas" />
+            <img src={bannerConvite} alt="Banner de convite para divulgar seu negócio" />
           </Carousel.Item>
           <Carousel.Item>
             <img src={banner} alt="Banner com ofertas" />
