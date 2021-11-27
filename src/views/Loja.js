@@ -2,9 +2,12 @@ import axios from 'axios';
 
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router'
-import { FaRegEnvelope } from 'react-icons/fa'
+import { FaRegEnvelope, FaBookmark } from 'react-icons/fa'
 
 import { loja } from '../data/loja';
+
+import bannerLoja from '../assets/bannerLojaExemplo.png'
+import ProductList from '../components/ProductList';
 
 export default function Loja() {
   useEffect(() => {
@@ -27,12 +30,14 @@ export default function Loja() {
       });
   }, []);
 
+  const [favoritado, setFavoritado] = useState(false);
+
   return (
     <div className="loja-page">
       <div className="loja-profile-box">
         <img src={infoLoja.foto_loja} alt={infoLoja.nome} />
         <div className="loja-profile-info">
-          <h1>{infoLoja.nome}</h1>
+          <div><h1>{infoLoja.nome}</h1><FaBookmark className={favoritado ? "favoritado" : ""} onClick={() => setFavoritado(!favoritado)} /></div>
           <b>Sla kkkk</b><br />
           <span><b>{infoLoja.seguidores}</b> {infoLoja.seguidores == 1 ? "Seguidor" : "Seguidores"}</span>
         </div>
@@ -46,7 +51,21 @@ export default function Loja() {
       </div>
 
 
-      <div className="loja-profile"></div>
+      <div className="loja-products-box">
+        <div>
+          <img src={bannerLoja} alt="Capa da loja" />
+        </div>
+
+        <div>
+          <h2>Destaques da semana</h2>
+          <ProductList products={infoLoja.produtos} />
+        </div>
+
+        <div>
+          <h2>Novos Produtos</h2>
+          <ProductList products={infoLoja.produtos} />
+        </div>
+      </div>
     </div >
   )
 }

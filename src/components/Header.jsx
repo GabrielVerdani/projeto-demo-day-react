@@ -19,7 +19,7 @@ export default function Header() {
         </div>
 
         <form action="/pesquisa">
-          <input type="text" name="busca" id="searchBar" placeholder="Buscar..." />
+          <input type="text" name="busca" id="searchBar" placeholder="Buscar..." required />
           <button type="submit"><FaSearch /></button>
         </form>
 
