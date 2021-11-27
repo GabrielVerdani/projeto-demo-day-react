@@ -12,6 +12,7 @@ import Cadastro from "./views/Cadastro";
 
 import './styles/App.scss'
 import Login from "./views/Login";
+import EmptyState from "./views/EmptyState";
 
 export default function App() {
   return (
@@ -27,7 +28,7 @@ export default function App() {
           <Route path="/produto" exact element={<Produto />} />
           <Route path="/cadastro" exact element={<Cadastro />} />
           <Route path="/entrar" exact element={<Login />} />
-          <Route path='*' exact element={<Index />} />
+          <Route path='*' exact element={<EmptyState />} />
         </Routes>
       </div>
 

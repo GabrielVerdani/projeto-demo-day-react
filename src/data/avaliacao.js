@@ -44,4 +44,13 @@ export const avaliacao = [
     criado_em: "2021-11-11",
     modificado_em: "2021-11-11",
   },
+  {
+    id: 5,
+    id_produto: 2,
+    id_usuario: 3,
+    avaliacao_produto: 1,
+    comentario_produto: "Muito ruim",
+    criado_em: "2021-11-11",
+    modificado_em: "2021-11-11",
+  },
 ]

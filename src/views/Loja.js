@@ -15,8 +15,8 @@ export default function Loja() {
   }, [useLocation()]);
 
   // Pegar informações da loja
-  const id = Number(useLocation().search.split('=')[1]) || 1
-  const infoLoja = loja.find(l => l.id === id) || loja.find(l => l.id === 1);
+  const id = Number(useLocation().search.split('=')[1])
+  const infoLoja = loja.find(l => l.id === id) ? loja.find(l => l.id === id) : window.location.href = "/notfound";
 
   // Pegar endereço através do CEP
   const [endereco, setEndereco] = useState();

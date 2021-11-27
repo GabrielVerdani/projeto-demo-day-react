@@ -1,7 +1,8 @@
 .lojaitem-component {
   display: flex;
   flex-direction: column;
-  width: 240px;
+  flex-shrink: 0;
+  width: 180px;
   align-items: center;
   text-align: center;
   cursor: pointer;

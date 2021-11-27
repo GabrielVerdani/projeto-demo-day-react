@@ -16,7 +16,7 @@ export default function Produto() {
 
   // Pegar informações do produto
   const id = Number(useLocation().search.split('=')[1]) || 1
-  const infoProduto = produto.find(p => p.id === id) || produto.find(p => p.id === 1);
+  const infoProduto = produto.find(p => p.id === id) ? produto.find(p => p.id === id) : window.location.href = "/notfound";
   const infoLoja = loja.find(l => l.id === infoProduto.id_loja);
 
   let produtosAd = []

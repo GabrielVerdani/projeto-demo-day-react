@@ -19,6 +19,7 @@
 
     .pesquisa-lojas {
       display: flex;
+      overflow-x: hidden;
       gap: 10px;
       margin-bottom: 50px;
     }
