@@ -1,12 +1,14 @@
-import { FaSearch, FaStore } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { FaSearch, FaStore } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 //Import das Imagens
-import imageLogo from '../assets/image-logo-blue.png'
-import textLogo from '../assets/text-logo-blue.png'
-import defaultProfile from '../assets/default-profile.png'
+import imageLogo from '../assets/image-logo-blue.png';
+import textLogo from '../assets/text-logo-blue.png';
+import defaultProfile from '../assets/lucas.png';
 
 export default function Header() {
+  const nome = "Lucas";
+
   return (
     <div className="header">
       <div className="wrapper">
@@ -23,8 +25,10 @@ export default function Header() {
         </form>
 
         <div className="right-side">
-          <Link to="/cadastroloja"><FaStore /></Link>
-          <Link to="/cadastro"><img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" /></Link>
+          <Link to="/cadastroloja"><FaStore className="store-icon"/></Link>
+          <Link to="/cadastro" class="profile">
+            <img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" />Olá, {nome}
+          </Link>
         </div>
       </div>
     </div>
