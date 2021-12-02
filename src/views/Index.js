@@ -29,9 +29,6 @@ export default function Index() {
           <Carousel.Item>
             <Link to="/cadastroloja"><img src={bannerConvite} alt="Banner de convite para divulgar seu negócio" /></ Link>
           </Carousel.Item>
-          <Carousel.Item>
-            <img src={banner} alt="Banner com ofertas" />
-          </Carousel.Item>
         </Carousel>
       </div>
 

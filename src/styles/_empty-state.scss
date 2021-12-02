@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   height: calc(100vh - 55px);
+  animation: animatedBackground 100s linear infinite;
 
   div {
     display: flex;
@@ -28,5 +29,14 @@
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 0;
   }
 }

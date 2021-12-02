@@ -1,4 +1,4 @@
-import { FaSearch, FaShoppingCart } from 'react-icons/fa'
+import { FaSearch, FaStore } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 //Import das Imagens
@@ -7,7 +7,6 @@ import textLogo from '../assets/text-logo-blue.png'
 import defaultProfile from '../assets/default-profile.png'
 
 export default function Header() {
-
   return (
     <div className="header">
       <div className="wrapper">
@@ -24,6 +23,7 @@ export default function Header() {
         </form>
 
         <div className="right-side">
+          <Link to="/cadastroloja"><FaStore /></Link>
           <Link to="/cadastro"><img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" /></Link>
         </div>
       </div>
