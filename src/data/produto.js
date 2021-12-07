@@ -216,5 +216,115 @@ export const produto = [
     ],
     preco: 0.50,
     avaliacoes: avaliacao.filter(a => a.id_produto === 12),
+  },
+
+  {
+    id: 13,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://i.pinimg.com/564x/4d/9c/56/4d9c56933103d1850f443860b02f002d.jpg',
+    nome: "Sorvete morango e baunilha",
+    descricao: "Sorvete com pedaços de morango e baunilha",
+    caracteristicas: [
+      'Clássico sorvete com pedaços de morango e baunilha, uma explosão de sabores e doçura',
+    ],
+    preco: 7.00,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 13),
+  },
+
+  {
+    id: 14,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://images.pexels.com/photos/5061023/pexels-photo-5061023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    nome: "Sorvete de chocolate",
+    descricao: "Sorvete de chocolate belga",
+    caracteristicas: [
+      'Clássico sorvete com pedaços de chocolate e com raspas de chocolate meio amargo para um sabor equiilibrado',
+    ],
+    preco: 8.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 14),
+  },
+
+  {
+    id: 15,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://image.freepik.com/free-photo/chocolate-vanilla-ice-cream-bowl-dessert-close-up_53876-106080.jpg',
+    nome: "Sorvete doce de leite com amendoim",
+    descricao: "Doçura intensa do doce de leite junto a crocância do amendoim",
+    caracteristicas: [
+      'Clássico sorvete de baunilha levemente adoçicado como tradição da casa ',
+    ],
+    preco: 5.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 15),
+  },
+
+  {
+    id: 16,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://as2.ftcdn.net/v2/jpg/02/48/00/15/1000_F_248001581_g3FXiAudy3qrl0SDxqRhJQ5oURJoIPbo.jpg',
+    nome: "Sorvete napolitano",
+    descricao: "Sorvete napolitano",
+    caracteristicas: [
+      'Clássico trio napolitano sorvete de morango, creme e chocolate',
+    ],
+    preco: 5.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 16),
+  },
+
+  {
+    id: 17,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://image.freepik.com/free-photo/homemade-cookies-with-cream-chocolate-recipe_116380-81.jpg',
+    nome: "Sanduíche de Flocos",
+    descricao: "Sanduíche com cookies e sorvete de flocos",
+    caracteristicas: [
+    'Inspirado na versão Estadunidense o "chocolate chips", a versão brasileira com raspas de chocolate com dois cookies de baunilha com gotas de chocolate'
+    ],
+    preco:9.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 17),
+  },
+  {
+    id: 18,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://image.freepik.com/free-photo/belgium-waffles-with-strawberries-ice-cream-white-plate_2829-13952.jpg',
+    nome: "Waffles com sorvete de baunilha",
+    descricao: "",
+    caracteristicas: [
+      'Waffles com sorvete de baunilha acompanhado de sorvete de morangos frescos e calda de chocolate',
+    ],
+    preco: 8.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 18),
+  },
+  {
+    id: 19,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://images.pexels.com/photos/5060893/pexels-photo-5060893.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    nome: "Sorvete de baunilha",
+    descricao: "Sorvete de baunilha clássico",
+    caracteristicas: [
+      'Clássico sorvete de baunilha levemente adoçicado como tradição da casa ',
+    ],
+    preco: 8.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 19),
+  },
+  {
+    id: 20,
+    id_loja: 8,
+    categoria: 8,
+    foto_produto: 'https://images.pexels.com/photos/5060893/pexels-photo-5060893.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    nome: "Sorvete de baunilha",
+    descricao: "Sorvete de baunilha clássico",
+    caracteristicas: [
+      'Clássico sorvete de baunilha levemente adoçicado como tradição da casa ',
+    ],
+    preco: 8.99,
+    avaliacoes: avaliacao.filter(a => a.id_produto === 20),
   }
 ]
+
