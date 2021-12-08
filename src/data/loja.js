@@ -18,9 +18,9 @@ export const loja = [
   {
     id: 2,
     id_usuario: 2,
-    foto_loja: "https://github.com/emily-sousa.png",
+    foto_loja: "https://cdn.discordapp.com/attachments/913566052766597200/918217062839627846/papelarialogo_2.png",
     cnpj: "81269396000179",
-    nome: "Emyzote Banquinhos",
+    nome: "My Papelaria",
     cep: "04534013",
     numero: "55",
     produtos: produto.filter(p => p.id_loja === 2),
