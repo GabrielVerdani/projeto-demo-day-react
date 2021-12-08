@@ -11,6 +11,21 @@
   background-color: $primary-dark;
   z-index: 100;
 
+  .dropBarHamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+
+    svg {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+
   .wrapper {
     display: grid;
     align-content: center;
@@ -122,10 +137,12 @@
         .profile {
           display: flex;
           align-items: center;
-          font-size: 0.9rem;
+          font-size: 0.7rem;
           text-decoration: none;
           color: white; 
         }
+
+  
       }
     }
   }

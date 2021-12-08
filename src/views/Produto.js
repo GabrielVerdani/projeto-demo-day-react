@@ -73,12 +73,6 @@ export default function Produto() {
 
           <div className="product-info-color-price">
             <div className="product-info-color">
-              <b>Cor</b><br />
-              <span className="active" style={{ backgroundColor: "#160F0C" }}></span>
-              <span style={{ backgroundColor: "#AFAFDD" }}></span>
-              <span style={{ backgroundColor: "#A9CFD3" }}></span>
-              <span style={{ backgroundColor: "#CCF0C1" }}></span>
-              <span style={{ backgroundColor: "#FDDCE9" }}></span>
             </div>
 
             <div className="product-info-price">
