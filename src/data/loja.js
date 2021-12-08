@@ -99,4 +99,21 @@ export const loja = [
     criado_em: "2021-10-30",
     modificado_em: "2021-11-14",
   },
+
+
+  {
+    id: 8,
+    id_usuario: 8,
+    foto_loja: "https://img.freepik.com/vetores-gratis/vetor-de-logotipo-de-empresa-de-sorvete-em-estilo-doodle-fofo_53876-128299.jpg",
+    cnpj: "36600565000158",
+    nome: "Gelato",
+    cep: "08295261",
+    numero: "43",
+    produtos: produto.filter(p => p.id_loja === 8),
+    contato: "11919072333",
+    seguidores: 1015,
+    criado_em: "2021-08-30",
+    modificado_em: "2021-11-15",
+
+  }
 ]
