@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 //Import das Imagens
 import imageLogo from '../assets/image-logo-blue.png';
 import textLogo from '../assets/text-logo-blue.png';
-import defaultProfile from '../assets/lucas.png';
+import defaultProfile from '../assets/default-profile.png';
 
 export default function Header() {
   const nome = "Lucas";
@@ -17,6 +17,7 @@ export default function Header() {
             <img src={imageLogo} alt="Logo VOA" className="image-logo" />
             <img src={textLogo} alt="Logo VOA" className="text-logo" />
           </Link>
+            <p>teste</p>
         </div>
 
         <form action="/pesquisa">
@@ -27,7 +28,7 @@ export default function Header() {
         <div className="right-side">
           <Link to="/cadastroloja"><FaStore className="store-icon"/></Link>
           <Link to="/cadastro" class="profile">
-            <img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" />Olá, {nome}
+            <img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" />Faça login ou cadastre-se
           </Link>
         </div>
       </div>
