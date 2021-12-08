@@ -1,4 +1,4 @@
-import { FaSearch, FaStore, FaBars} from 'react-icons/fa';
+import { FaSearch, FaStore, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Dropdown from "./Dropdown"
 import { useState } from 'react';
@@ -20,16 +20,14 @@ export default function Header() {
             <img src={imageLogo} alt="Logo VOA" className="image-logo" />
             <img src={textLogo} alt="Logo VOA" className="text-logo" />
           </Link>
-          <div onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
 
-          <FaBars className="dropBarHamburguer"  />
-          {dropdown && <Dropdown /> }
-
+          <div className="dropBarHamburguer" onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
+            <FaBars />
+            {dropdown && <Dropdown />}
           </div>
-         
         </div>
 
-        
+
 
         <form action="/pesquisa">
           <input type="text" name="busca" id="searchBar" placeholder="Buscar..." required />
@@ -37,7 +35,7 @@ export default function Header() {
         </form>
 
         <div className="right-side">
-          <Link to="/cadastroloja"><FaStore className="store-icon"/></Link>
+          <Link to="/cadastroloja"><FaStore className="store-icon" /></Link>
           <Link to="/cadastro" class="profile">
             <img className="profile-picture" src={defaultProfile} alt="Foto de Perfil" />Faça login ou cadastre-se
           </Link>
