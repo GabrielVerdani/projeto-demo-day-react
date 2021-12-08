@@ -11,6 +11,17 @@
   background-color: $primary-dark;
   z-index: 100;
 
+  .dropBarHamburguer {
+    position: relative;
+    color: white;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-right: 26px;
+    cursor: pointer;
+    
+  }
+
   .wrapper {
     display: grid;
     align-content: center;
@@ -126,6 +137,8 @@
           text-decoration: none;
           color: white; 
         }
+
+  
       }
     }
   }
