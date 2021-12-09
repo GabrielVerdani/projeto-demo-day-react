@@ -8,6 +8,7 @@ import ProductList from "../components/ProductList";
 
 import { loja } from "../data/loja";
 import { produto } from "../data/produto";
+import { categoria } from "../data/categoria"
 
 export default function Pesquisa() {
   useEffect(() => {
@@ -29,10 +30,15 @@ export default function Pesquisa() {
   });
 
   produto.forEach(p => {
+    let produtoCategoria = categoria.find(c => c.id === p.categoria).nome;
     if (p.nome.toLowerCase().includes(busca.toLowerCase())) {
+      resultadoProdutos.push(p);
+    } else if (produtoCategoria.toLowerCase().includes(busca.toLowerCase())) {
       resultadoProdutos.push(p);
     }
   });
+
+
 
   return (
     <div className="pesquisa-page">
