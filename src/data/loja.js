@@ -4,9 +4,9 @@ export const loja = [
   {
     id: 1,
     id_usuario: 1,
-    foto_loja: "https://github.com/gabrielverdani.png",
+    foto_loja: "https://cdn.discordapp.com/attachments/874349674100826124/918501597271691294/Loja_de_eletronicos.png",
     cnpj: "64978351000154",
-    nome: "Cafézinho Verdani",
+    nome: "InfoTech",
     cep: "04375070",
     numero: "12",
     produtos: produto.filter(p => p.id_loja === 1),
