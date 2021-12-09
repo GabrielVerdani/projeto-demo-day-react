@@ -17,7 +17,6 @@ export default function Header() {
             <img src={imageLogo} alt="Logo VOA" className="image-logo" />
             <img src={textLogo} alt="Logo VOA" className="text-logo" />
           </Link>
-            <p>teste</p>
         </div>
 
         <form action="/pesquisa">

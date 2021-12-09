@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="about">
           <h2>VOA</h2>
           <ul>
-            <li><Link to='#'>Quem somos?</Link></li>
+            <li><Link to='/Sobre'>Quem somos?</Link></li>
             <li><Link to='#'>Abra sua loja</Link></li>
             <li><Link to='#'>Produtos mais buscados</Link></li>
             <li><Link to='#'>Trabalhe conosco</Link></li>
