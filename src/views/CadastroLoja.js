@@ -6,7 +6,7 @@ export default function CadastroLoja() {
       <div className="cadastro-container">
         <div className="cadastro-form">
           <h1>Cadastre sua loja!</h1>
-          <p>Frase de efeito muito linda :D</p>
+          <p>Aqui você começa os preparativos para o lançamento da sua loja</p>
           <form>
             <div className="cadastro-top">
               <div>

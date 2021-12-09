@@ -53,4 +53,10 @@ export const categoria = [
     criado_em: "2020-10-09",
     modificado_em: "2020-10-09",
   },
+  {
+    id: 11,
+    nome: "Outro",
+    criado_em: "2020-10-09",
+    modificado_em: "2020-10-09",
+  },
 ]

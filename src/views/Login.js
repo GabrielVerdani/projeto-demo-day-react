@@ -7,7 +7,7 @@ export default function Login() {
       <div className="login-container">
         <div className="login-form">
           <h1>Login</h1>
-          <p>Frase de efeito muito linda :D</p>
+          <p>Bem vindo de volta ao nosso foguete!</p>
           <form>
             <div className="cadastro-top">
               <div>

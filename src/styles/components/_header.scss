@@ -17,7 +17,8 @@
     justify-content: center;
     position: relative;
     height: 60px;
-    width: 60px;
+    width: 30px;
+    margin-right: 20px;
     cursor: pointer;
 
     svg {
@@ -65,6 +66,7 @@
     form {
       display: flex;
       justify-content: center;
+      align-self: center;
       background-color: white;
       margin: 3px 15px;
       border-radius: 5px;

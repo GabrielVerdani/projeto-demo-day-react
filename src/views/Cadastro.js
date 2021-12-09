@@ -7,7 +7,7 @@ export default function Cadastro() {
       <div className="cadastro-container">
         <div className="cadastro-form">
           <h1>Cadastre-se</h1>
-          <p>Frase de efeito muito linda :D</p>
+          <p>Faça seu cadastro e venha voar com a gente!</p>
           <form>
             <div className="cadastro-top">
               <div>

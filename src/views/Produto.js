@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import queryString from "query-string"
 import { FaShoppingBag, FaRegEnvelope, FaStar } from "react-icons/fa"
 
 import { produto } from "../data/produto";
@@ -15,7 +16,8 @@ export default function Produto() {
   }, [useLocation()]);
 
   // Pegar informações do produto
-  const id = Number(useLocation().search.split('=')[1]) || 1
+  const { search } = useLocation();
+  const id = Number(queryString.parse(search).id);
   const infoProduto = produto.find(p => p.id === id) ? produto.find(p => p.id === id) : window.location.href = "/notfound";
   const infoLoja = loja.find(l => l.id === infoProduto.id_loja);
 

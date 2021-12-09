@@ -16,15 +16,14 @@ export default function Header() {
     <div className="header">
       <div className="wrapper">
         <div className="left-side">
-          <Link to="/" className="logo" >
-            <img src={imageLogo} alt="Logo VOA" className="image-logo" />
-            <img src={textLogo} alt="Logo VOA" className="text-logo" />
-          </Link>
-
           <div className="dropBarHamburguer" onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
             <FaBars />
             {dropdown && <Dropdown />}
           </div>
+          <Link to="/" className="logo" >
+            <img src={imageLogo} alt="Logo VOA" className="image-logo" />
+            <img src={textLogo} alt="Logo VOA" className="text-logo" />
+          </Link>
         </div>
 
 

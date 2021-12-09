@@ -18,6 +18,8 @@ export default function Loja() {
   const id = Number(useLocation().search.split('=')[1])
   const infoLoja = loja.find(l => l.id === id) ? loja.find(l => l.id === id) : window.location.href = "/notfound";
 
+  const destaques = infoLoja.produtos.filter(p => p.destaque);
+
   // Pegar endereço através do CEP
   const [endereco, setEndereco] = useState();
 
@@ -58,12 +60,12 @@ export default function Loja() {
 
         <div>
           <h2>Destaques da semana</h2>
-          <ProductList products={infoLoja.produtos} />
+          <ProductList products={destaques} />
         </div>
 
         <div>
           <h2>Novos Produtos</h2>
-          <ProductList products={infoLoja.produtos} />
+          <ProductList products={infoLoja.produtos.sort((a, b) => a - b).reverse()} />
         </div>
       </div>
     </div >
