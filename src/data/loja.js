@@ -4,9 +4,9 @@ export const loja = [
   {
     id: 1,
     id_usuario: 1,
-    foto_loja: "https://github.com/gabrielverdani.png",
+    foto_loja: "https://cdn.discordapp.com/attachments/874349674100826124/918501597271691294/Loja_de_eletronicos.png",
     cnpj: "64978351000154",
-    nome: "Cafézinho Verdani",
+    nome: "InfoTech",
     cep: "04375070",
     numero: "12",
     produtos: produto.filter(p => p.id_loja === 1),
@@ -18,9 +18,9 @@ export const loja = [
   {
     id: 2,
     id_usuario: 2,
-    foto_loja: "https://github.com/emily-sousa.png",
+    foto_loja: "https://cdn.discordapp.com/attachments/913566052766597200/918217062839627846/papelarialogo_2.png",
     cnpj: "81269396000179",
-    nome: "Emyzote Banquinhos",
+    nome: "My Papelaria",
     cep: "04534013",
     numero: "55",
     produtos: produto.filter(p => p.id_loja === 2),

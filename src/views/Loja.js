@@ -38,7 +38,7 @@ export default function Loja() {
         <img src={infoLoja.foto_loja} alt={infoLoja.nome} />
         <div className="loja-profile-info">
           <div><h1>{infoLoja.nome}</h1><FaBookmark className={favoritado ? "favoritado" : ""} onClick={() => setFavoritado(!favoritado)} /></div>
-          <b>Sla kkkk</b><br />
+          <b></b><br />
           <span><b>{infoLoja.seguidores}</b> {infoLoja.seguidores == 1 ? "Seguidor" : "Seguidores"}</span>
         </div>
         <div className="loja-profile-endereco">

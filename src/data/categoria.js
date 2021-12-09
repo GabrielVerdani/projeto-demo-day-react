@@ -1,11 +1,5 @@
 export const categoria = [
   {
-    id: 1,
-    nome: "Outro",
-    criado_em: "2020-10-09",
-    modificado_em: "2020-10-09",
-  },
-  {
     id: 2,
     nome: "Construção",
     criado_em: "2020-10-09",
