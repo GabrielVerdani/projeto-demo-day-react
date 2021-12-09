@@ -2,11 +2,11 @@ import { avaliacao } from "./avaliacao"
 
 export const produto = [
 
- 
+
   {
     id: 1,
     id_loja: 1,
-    categoria: 10,
+    categoria: 4,
     foto_produto: 'https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     nome: "Relógio digital",
     descricao: "",
@@ -15,11 +15,12 @@ export const produto = [
     ],
     preco: 159.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 1),
+    destaque: true,
   },
   {
     id: 2,
     id_loja: 1,
-    categoria: 1,
+    categoria: 4,
     foto_produto: 'https://images.unsplash.com/photo-1623394088867-503931dff665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     nome: "Capa de celular ",
     descricao: "",
@@ -33,12 +34,13 @@ export const produto = [
     ],
     preco: 10.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 2),
+    destaque: true,
   },
 
 
   {
     id: 3,
-    categoria: 1,
+    categoria: 4,
     foto_produto: 'https://image.freepik.com/free-photo/powerbank-cellphone-wooden-table_1387-601.jpg',
     id_loja: 1,
     nome: "Carregador portátil",
@@ -48,12 +50,13 @@ export const produto = [
     ],
     preco: 159.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 3),
+    destaque: false,
   },
 
   {
     id: 4,
     id_loja: 2,
-    categoria: 1,
+    categoria: 11,
     foto_produto: 'https://www.larshopping.com.br/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/5/a/5a82e0e3979b3fa0ed54206b631a2fa6.jpg',
     nome: "Mesa de centro",
     descricao: "Boa pra você que é hipster e  quer pagar de rico (porque normamelmente pra você ter uma capinha dessas tem que ser mesmo). Vem nas cores: transparente.",
@@ -67,11 +70,12 @@ export const produto = [
     ],
     preco: 203.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 4),
+    destaque: true,
   },
   {
     id: 5,
     id_loja: 2,
-    categoria: 4,
+    categoria: 8,
     foto_produto: 'https://images.pexels.com/photos/5417622/pexels-photo-5417622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     nome: "Kit agendas e caderno",
     descricao: "",
@@ -82,11 +86,12 @@ export const produto = [
     ],
     preco: 23.50,
     avaliacoes: avaliacao.filter(a => a.id_produto === 5),
+    destaque: true,
   },
   {
     id: 6,
     id_loja: 8,
-    categoria: 4,
+    categoria: 10,
     foto_produto: 'https://static.giulianaflores.com.br/images/product/29202gg.jpg?ims=750x750',
     nome: "Barra de chocolate Milka",
     descricao: "",
@@ -100,11 +105,12 @@ export const produto = [
     ],
     preco: 9.40,
     avaliacoes: avaliacao.filter(a => a.id_produto === 6),
+    destaque: false,
   },
   {
     id: 7,
     id_loja: 4,
-    categoria: 4,
+    categoria: 3,
     foto_produto: 'https://www.drogariavenancio.com.br/arquivos/ids/783237-1000-1000/73195_Z.jpg?v=637341590264830000',
     nome: "Kit Nivea verão",
     descricao: "",
@@ -118,6 +124,7 @@ export const produto = [
     ],
     preco: 35.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 7),
+    destaque: false,
   },
   {
     id: 8,
@@ -136,6 +143,7 @@ export const produto = [
     ],
     preco: 70.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 8),
+    destaque: true,
   },
   {
     id: 9,
@@ -154,10 +162,11 @@ export const produto = [
     ],
     preco: 18.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 9),
+    destaque: false,
   },
   {
     id: 10,
-    id_loja: 6,
+    id_loja: 8,
     categoria: 9,
     foto_produto: 'https://www.bazardosaara.com.br/image/cache/data/7866889923761a-1150x850h.jpg',
     nome: "Mini seladora de embalagens",
@@ -172,11 +181,12 @@ export const produto = [
     ],
     preco: 4.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 10),
+    destaque: false,
   },
   {
     id: 11,
     id_loja: 1,
-    categoria: 2,
+    categoria: 4,
     foto_produto: 'https://img.kalunga.com.br/fotosdeprodutos/443882z_1.jpg',
     nome: "Suporte para smartphone",
     descricao: "",
@@ -190,11 +200,12 @@ export const produto = [
     ],
     preco: 25.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 11),
+    destaque: false,
   },
   {
     id: 12,
     id_loja: 7,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://http2.mlstatic.com/D_NQ_NP_851881-MLB45666491975_042021-W.jpg',
     nome: "Jogo de panelas Antiaderente",
     descricao: "",
@@ -208,12 +219,13 @@ export const produto = [
     ],
     preco: 280.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 12),
+    destaque: true,
   },
 
   {
     id: 13,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://i.pinimg.com/564x/4d/9c/56/4d9c56933103d1850f443860b02f002d.jpg',
     nome: "Sorvete morango e baunilha",
     descricao: "Sorvete com pedaços de morango e baunilha",
@@ -222,12 +234,13 @@ export const produto = [
     ],
     preco: 7.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 13),
+    destaque: true,
   },
 
   {
     id: 14,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://images.pexels.com/photos/5061023/pexels-photo-5061023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     nome: "Sorvete de chocolate",
     descricao: "Sorvete de chocolate belga",
@@ -236,12 +249,13 @@ export const produto = [
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 14),
+    destaque: false,
   },
 
   {
     id: 15,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://image.freepik.com/free-photo/chocolate-vanilla-ice-cream-bowl-dessert-close-up_53876-106080.jpg',
     nome: "Sorvete doce de leite com amendoim",
     descricao: "Doçura intensa do doce de leite junto a crocância do amendoim",
@@ -250,12 +264,13 @@ export const produto = [
     ],
     preco: 5.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 15),
+    destaque: false,
   },
 
   {
     id: 16,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://as2.ftcdn.net/v2/jpg/02/48/00/15/1000_F_248001581_g3FXiAudy3qrl0SDxqRhJQ5oURJoIPbo.jpg',
     nome: "Sorvete napolitano",
     descricao: "Sorvete napolitano",
@@ -264,25 +279,27 @@ export const produto = [
     ],
     preco: 5.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 16),
+    destaque: true,
   },
 
   {
     id: 17,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://image.freepik.com/free-photo/homemade-cookies-with-cream-chocolate-recipe_116380-81.jpg',
     nome: "Sanduíche de Flocos",
     descricao: "Sanduíche com cookies e sorvete de flocos",
     caracteristicas: [
-    'Inspirado na versão Estadunidense o "chocolate chips", a versão brasileira com raspas de chocolate com dois cookies de baunilha com gotas de chocolate'
+      'Inspirado na versão Estadunidense o "chocolate chips", a versão brasileira com raspas de chocolate com dois cookies de baunilha com gotas de chocolate'
     ],
-    preco:9.99,
+    preco: 9.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 17),
+    destaque: false,
   },
   {
     id: 18,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://image.freepik.com/free-photo/belgium-waffles-with-strawberries-ice-cream-white-plate_2829-13952.jpg',
     nome: "Waffles com sorvete de baunilha",
     descricao: "",
@@ -291,11 +308,12 @@ export const produto = [
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 18),
+    destaque: true,
   },
   {
     id: 19,
     id_loja: 8,
-    categoria: 8,
+    categoria: 10,
     foto_produto: 'https://images.pexels.com/photos/5060893/pexels-photo-5060893.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
     nome: "Sorvete de baunilha",
     descricao: "Sorvete de baunilha clássico",
@@ -304,6 +322,7 @@ export const produto = [
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 19),
+    destaque: false,
   },
 
   {
@@ -321,21 +340,23 @@ export const produto = [
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 20),
+    destaque: true,
   },
   {
     id: 21,
     id_loja: 1,
-    categoria:4,
+    categoria: 4,
     foto_produto: 'https://a-static.mlcdn.com.br/618x463/mini-caixa-caixinha-som-portatil-bluetooth-mp3-fm-sd-usb-mini-speak/prarevender/6139baa66bab11ebb0704201ac1850d6/371f1b3c02fca30fbe440ef6748ac20b.jpg',
     nome: "Mini caixa de som",
     descricao: "",
     caracteristicas: [
       'Mini Caixa Caixinha Som Portátil Bluetooth Mp3 Fm Sd Usb - Mini Speak',
-      'Caixa de Som Portátil Bluetooth Mini Mp3 FM SD USB Mini Speaker Mini Caixa de Som Speaker Ws 887 com Bluetooth, FM', 
+      'Caixa de Som Portátil Bluetooth Mini Mp3 FM SD USB Mini Speaker Mini Caixa de Som Speaker Ws 887 com Bluetooth, FM',
       'Entrada Micro Sd e Auxiliar Surpreenda com a Qualidade de Som Itens Inclusos 01- Caixa De Som Ws-887 01- Cabo USB',
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 21),
+    destaque: true,
   },
 
   {
@@ -354,6 +375,7 @@ export const produto = [
     ],
     preco: 59.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 22),
+    destaque: true,
   },
 
   {
@@ -375,6 +397,7 @@ export const produto = [
     ],
     preco: 89.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 23),
+    destaque: true,
   },
 
   {
@@ -393,6 +416,7 @@ export const produto = [
     ],
     preco: 39.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 24),
+    destaque: false,
   },
 
   {
@@ -404,7 +428,7 @@ export const produto = [
     descricao: "",
     caracteristicas: [
       'Suporte Ergonômico Ajustável para Celular/Tablet/ipad',
-      
+
       'Ideal para Celulares, Tablet e Ipad.',
       'Alivia a fadiga dos ombros e do pescoço, além de deixar as mãos livres.',
       'Ajuste multi-ângulo. Este é um suporte para telefone e tablet que pode ser dobrado sem montagem. Pode ser transportado até no seu bolso.', 'Ajuste livre de vários ângulos.',
@@ -421,6 +445,7 @@ export const produto = [
     ],
     preco: 15.00,
     avaliacoes: avaliacao.filter(a => a.id_produto === 25),
+    destaque: true,
   },
 
   {
@@ -432,13 +457,14 @@ export const produto = [
     descricao: "Sorvete de baunilha clássico",
     caracteristicas: [
       'Cabo Hdmi 20 metros Blindado com Filtro e Malha de Nylon V.1.4 Suporte 3D Full Hd 1080 Exbom Cbx-H200CM',
-      'Cabo Hdmi de 20 metros versão 1.4 com condutores banhados a ouro, protegido contra Emi, Rfi e sobrecarga, e que permite conectar aparelhos', 
+      'Cabo Hdmi de 20 metros versão 1.4 com condutores banhados a ouro, protegido contra Emi, Rfi e sobrecarga, e que permite conectar aparelhos',
       'com saída Hdmi a Tv Lcd, Tv de Plasma, Tv Led ou a outros aparelhos com entrada Hdmi.',
       'Máxima qualidade nas experiências em alta definição.',
       'E o melhor, este cabo de alta definição e qualidade possui suporte para 3D e Full Hd 1080i e 1080p.',
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 26),
+    destaque: false,
   },
 
   {
@@ -452,15 +478,16 @@ export const produto = [
       '-Cabo com fio de alta qualidade com carregamento e dados super rápidos, qualidade Kaidi!',
 
       '-Design especial, evita enrolamento e extração',
-      
+
       '-Usando conector USB de alta qualidade, modelo interno para reforçar tempo de uso extendido. Desenho escalonado, não necessita preocupações com o envólucro do telefone',
-      
+
       '-Fabricação com material de alta qualidade, proteção ambiental não tóxica.',
-      
+
       '-Sentindo-se muito bem, dobra qualquer ângulo e difícil de dar nó, pucha continuamente.',
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 27),
+    destaque: false,
   },
 
   {
@@ -471,22 +498,23 @@ export const produto = [
     nome: "Mini processador recarregável",
     descricao: "",
     caracteristicas: [
-'      Triturador Multifuncional  Recarregável C/ Cabo Usb',
+      '      Triturador Multifuncional  Recarregável C/ Cabo Usb',
 
-      'Esse Mini Processador Elétrico Portátil é o produto ideal para auxiliar na rapidez e no desempenho dos seus pratos no Seu Dia a Dia Na Cozinha.', 
+      'Esse Mini Processador Elétrico Portátil é o produto ideal para auxiliar na rapidez e no desempenho dos seus pratos no Seu Dia a Dia Na Cozinha.',
       'Ele conta comlâminas duplas que são capazes de triturar alho, pimentas, Cebola',
-      
+
       'CONTÉUDO DA EMBALAGEM:',
       '1 Mini Triturador ',
-      
+
       '1 Cabo USB',
-      
+
       'Capacidade: 180ml',
-      
-     ' Material: Aço Inoxidável e ABS',
+
+      ' Material: Aço Inoxidável e ABS',
     ],
     preco: 8.99,
     avaliacoes: avaliacao.filter(a => a.id_produto === 28),
+    destaque: false,
   },
 
   {
@@ -498,31 +526,27 @@ export const produto = [
     descricao: "",
     caracteristicas: [
 
-  'Fonte de alimentação com regulagem de voltagem universal.',
+      'Fonte de alimentação com regulagem de voltagem universal.',
 
-  'Indicado para: Telefone sem fio, notebook, câmera fotográfica, roteador, Entre outros.',
+      'Indicado para: Telefone sem fio, notebook, câmera fotográfica, roteador, Entre outros.',
 
-  'Especificações Técnicas:',
+      'Especificações Técnicas:',
 
-  'Fonte de alimentação regulada',
+      'Fonte de alimentação regulada',
 
-  'Modelo: FNTU-MT30W6U',
+      'Modelo: FNTU-MT30W6U',
 
-  'Entrada: AC100-240V 0.25A 50/60Hz',
+      'Entrada: AC100-240V 0.25A 50/60Hz',
 
-  'Saída: 3V 4.5V 5V 6V 7.5V 9V 12V,5V 2.1A(12W without USB output)',
+      'Saída: 3V 4.5V 5V 6V 7.5V 9V 12V,5V 2.1A(12W without USB output)',
 
-  'Potência: 26W',
+      'Potência: 26W',
 
-  '6 plugues pinos',
+      '6 plugues pinos',
     ],
     preco: 215.90,
     avaliacoes: avaliacao.filter(a => a.id_produto === 29),
+    destaque: true,
   },
-
-
-
-
-
 ]
 
