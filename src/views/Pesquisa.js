@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 import ScrollContainer from "react-indiana-drag-scroll";
+import queryString from "query-string"
 
 import LojaItem from "../components/LojaItem";
 import ProductList from "../components/ProductList";
@@ -13,19 +14,22 @@ export default function Pesquisa() {
     window.scrollTo(0, 0);
   }, [useLocation().pathname]);
 
-  const pesquisa = useLocation().search.split('=')[1]
+  const { search } = useLocation();
+  const { busca } = queryString.parse(search)
+  console.log(busca)
+
 
   const resultadoLojas = [];
   const resultadoProdutos = [];
 
   loja.forEach(l => {
-    if (l.nome.toLowerCase().includes(pesquisa.toLowerCase())) {
+    if (l.nome.toLowerCase().includes(busca.toLowerCase())) {
       resultadoLojas.push(l);
     }
   });
 
   produto.forEach(p => {
-    if (p.nome.toLowerCase().includes(pesquisa.toLowerCase())) {
+    if (p.nome.toLowerCase().includes(busca.toLowerCase())) {
       resultadoProdutos.push(p);
     }
   });
@@ -33,7 +37,7 @@ export default function Pesquisa() {
   return (
     <div className="pesquisa-page">
       <div className="pesquisa-box">
-        <h1 className="pesquisa-title">Resultados para "{pesquisa}"</h1>
+        <h1 className="pesquisa-title">Resultados para "{busca}"</h1>
         {resultadoLojas.length > 0 ?
           <div>
             <h3 className="pesquisa-subtitle">Lojas</h3>
