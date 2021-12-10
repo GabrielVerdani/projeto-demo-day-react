@@ -3,9 +3,8 @@ import { useLocation } from "react-router";
 
 import { integrantes } from "../data/integrantes";
 
-import ProductList from "../components/ProductList";
+import IntegrantesList from "../components/IntegrantesList";
 
-import { produto } from "../data/produto";
 
 
 export default function Index() {
@@ -19,7 +18,7 @@ export default function Index() {
       <div className="products-container">
         <div className="wrapper">
           <h2>Nossa Equipe</h2>
-          <ProductList products={integrantes} />
+          <IntegrantesList integrantes={integrantes} />
         </div>
         </div>
     </div >
