@@ -27,7 +27,11 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                     </div>
                     <div className="sidebar_link">
                         <i className="fas fa-store"></i>
-                        <a href="#">Loja</a>
+                        <a href="#">Favoritos</a>
+                    </div>
+                    <div className="sidebar_link">
+                        <i className="fas fa-store"></i>
+                        <a href="#">Sobre</a>
                     </div>
                 </div>
         </div>
