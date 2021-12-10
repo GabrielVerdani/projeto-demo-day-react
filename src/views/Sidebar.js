@@ -1,4 +1,5 @@
 import defaultProfile from '../assets/lucas.png';
+import { FaSearch, FaStore, FaBars } from 'react-icons/fa';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     return (
