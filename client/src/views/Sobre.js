@@ -18,6 +18,19 @@ export default function Index() {
       <div className="products-container">
         <div className="wrapper">
           <h2>Nossa Equipe</h2>
+          <p>
+              Preparem-se para comprar!
+              Comprar em dobro!
+              Para proteger os comerciantes da exclusão!
+              Para unir os comerciantes da nossa região!
+              Pra relacionar comerciante com comprador!
+              Pra estender o seu lucro as estrelas!
+              Apresentamos...
+              Equipe rocket negociando na velocidade da luz!
+              Venha agora 
+              E prepare-se para comprar, comprar!
+              Uau é isso aí!
+            </p>
           <IntegrantesList integrantes={integrantes} />
         </div>
         </div>
