@@ -17,7 +17,7 @@ export default function Index() {
 
       <div className="products-container">
         <div className="wrapper">
-          <h2>Nossa Equipe</h2>
+          <h2>Sobre o Projeto</h2>
           <p>
               Preparem-se para comprar!
               Comprar em dobro!
@@ -31,6 +31,10 @@ export default function Index() {
               E prepare-se para comprar, comprar!
               Uau é isso aí!
             </p>
+        </div>
+
+        <div className="wrapper">
+          <h2>Nossa Equipe</h2>
           <IntegrantesList integrantes={integrantes} />
         </div>
         </div>
