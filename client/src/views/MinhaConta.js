@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Sidebar from '../views/Sidebar.js'
 
 export default function MinhaConta () {
 
@@ -13,7 +13,7 @@ export default function MinhaConta () {
     }
     return (
         <div className="account">
-            <h1> aaa</h1>
+            <Sidebar sidebarOpen={SidebarOpen} closeSidebar={closeSidebar}/>
         </div>
     )
 
