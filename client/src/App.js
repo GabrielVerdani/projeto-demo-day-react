@@ -10,6 +10,7 @@ import Pesquisa from './views/Pesquisa'
 import Produto from './views/Produto'
 import Cadastro from "./views/Cadastro";
 import Sobre from "./views/Sobre";
+import Sidebar from "./views/Sidebar";
 
 
 import './styles/App.scss'
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/cadastro" exact element={<Cadastro />} />
           <Route path="/entrar" exact element={<Login />} />
           <Route path="/sobre" exact element={<Sobre />} />
+          <Route path="/sidebar" exact element={<Sidebar />} />
           <Route path='*' exact element={<EmptyState />} />
         </Routes>
       </div>

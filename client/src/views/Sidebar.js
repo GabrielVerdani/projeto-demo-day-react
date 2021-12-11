@@ -18,28 +18,33 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </div>
                 <div className="sidebar-menu">
                     <div className="active-menu-link">
-                       <FaUser className="user-icon" color='white'/>
-                        <a href="#">Minha conta</a>
-                    </div>
+                        <div className="sidebar-link">
+                        <FaUser className="user-icon" color='white' size='18px'/>
+                        <a href="#" id='icon-minha-conta'>Minha conta</a>
+                        </div>
                     <div className="sidebar-link">
-                        <FaStore className="store-icon" color='white' />
+                        <FaStore className="store-icon" color='white'size='18px' />
                         <a href="#">Loja</a>
                     </div>
                     <div className="sidebar-link">
-                        <FaBookmark className="fav-icon" color='white'/>
+                        <FaBookmark className="fav-icon" color='white'size='18px'/>
                         <a href="#">Favoritos</a>
                     </div>
                     <div className="sidebar-link">
-                        <FaInfoCircle className="info-icon" color='white'/>
+                        <FaInfoCircle className="info-icon" color='white'size='18px'/>
                         <a href="#">Sobre</a>
+
                     </div>
                     <div className='line-dashboard'>
-                     </div>
+                    </div>
+
                      <div>
-                    <div className='sidebar-link'>
-                    <FaDoorOpen className="info-icon" color='white'/>
+                    <div className='sidebar-logout'>
+                    <FaDoorOpen className="info-icon" color='white' size='18px'/>
                     <a href="#">Sair</a>
                     </div>
+                    </div>
+ 
                     </div>
                 </div>
         </div>
