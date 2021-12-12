@@ -17,7 +17,7 @@ export default function Index() {
 
       <div className="products-container">
         <div className="wrapper">
-          <h2>Sobre o Projeto</h2>
+          <h2>Lema</h2>
           <p> Preparem-se para comprar! </p>
           <p> Comprar em dobro! </p>    
           <p> Para proteger os comerciantes da exclusão! </p>   
