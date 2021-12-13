@@ -11,6 +11,7 @@ import Produto from './views/Produto'
 import Cadastro from "./views/Cadastro";
 import Sobre from "./views/Sobre";
 import Perfil from "./views/Perfil";
+import Faq from "./views/Faq";
 
 
 import './styles/App.scss'
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/produto" exact element={<Produto />} />
           <Route path="/cadastro" exact element={<Cadastro />} />
           <Route path="/entrar" exact element={<Login />} />
+          <Route path="/faq" exact element={<Faq />} />
           <Route path="/sobre" exact element={<Sobre />} />
           <Route path="/perfil" exact element={<Perfil />} />
           <Route path='*' exact element={<EmptyState />} />

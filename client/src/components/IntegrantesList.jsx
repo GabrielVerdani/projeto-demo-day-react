@@ -11,10 +11,10 @@ export default function IntegrantesList(props) {
             <div key={integrante.id}>
               <IntegrantesItem
                 id={integrante.id}
-                image={integrante.foto_produto}
+                image={integrante.foto_integrante}
                 title={integrante.nome}
                 funcao={integrante.funcao} 
-                github={integrante.github}
+                linkedin={integrante.linkedin}
                 />
             </div>
           )

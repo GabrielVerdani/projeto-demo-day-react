@@ -23,7 +23,7 @@ export default function Footer() {
           <h2>Ajuda</h2>
           <ul>
             <li><Link to='#'>SAC</Link></li>
-            <li><Link to='#'>FAQ</Link></li>
+            <li><Link to='/Faq'>FAQ</Link></li>
             <li><Link to='#'>Política de Privacidade</Link></li>
             <li><Link to='#'>Termos e Condições de Uso</Link></li>
           </ul>
