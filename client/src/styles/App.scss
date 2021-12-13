@@ -17,12 +17,20 @@
 @import 'cadastro';
 @import 'login';
 @import 'sidebar';
+@import 'minhaloja';
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Poppins, sans-serif;
+}
+
+.account{
+display: grid;
+grid-template-columns: 215px 100px auto 100px;
+grid-template-rows: 810px auto auto auto;
+grid-template-areas: "aside main main main main ";
 }
 
 ::-webkit-scrollbar{
@@ -57,6 +65,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .desktop-only {
   display: none !important;
+}
+
+@media only screen and (max-width: 978px){
+  .account{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {

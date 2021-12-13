@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Sidebar from '../views/Sidebar.js'
+import Sidebar from './Sidebar.js'
+import MinhaLoja from './MinhaLoja.js'
 
-export default function MinhaConta () {
+export default function Perfil () {
 
     const [SidebarOpen, setSidebarOpen] = useState(false);
     const openSidebar = () => {
@@ -14,7 +15,7 @@ export default function MinhaConta () {
     return (
         <div className="account">
             <Sidebar sidebarOpen={SidebarOpen} closeSidebar={closeSidebar}/>
+            <MinhaLoja sidebarOpen={SidebarOpen} openSidebar={openSidebar}/>
         </div>
     )
-
 }

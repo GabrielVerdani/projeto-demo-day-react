@@ -1,13 +1,14 @@
-import defaultProfile from '../assets/lucas.png';
+import defaultProfile from "../assets/lucas.png"
 import { FaSearch, FaStore, FaBars, FaUser, FaBookmark, FaInfoCircle, FaDoorOpen } from 'react-icons/fa';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     return (
-        <div className={sidebarOpen ? "sidebar-responsive" : ""} className="sidebar"> 
+        
+        <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar"> 
             <div className="sidebar-title"> 
                 <div className="sidebar-img"> 
                  <img src={defaultProfile} alt="Foto de perfil"/>
-                 <h4>Lucas Eduardo</h4>
+                 <h5>Lucas Eduardo</h5>
                 </div>
                 <i 
                 onClick={() => closeSidebar()}
@@ -18,7 +19,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </div>
                 <div className="sidebar-menu">
                     <div className="active-menu-link">
-                        <div className="sidebar-link">
+                        <div className="sidebar-link active-menu-link">
                         <FaUser className="user-icon" color='white' size='18px'/>
                         <a href="#" id='icon-minha-conta'>Minha conta</a>
                         </div>
@@ -32,8 +33,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                     </div>
                     <div className="sidebar-link">
                         <FaInfoCircle className="info-icon" color='white'size='18px'/>
-                        <a href="#">Sobre</a>
-
+                        <a href="../Sobre">Sobre</a>
                     </div>
                     <div className='line-dashboard'>
                     </div>
@@ -41,7 +41,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                      <div>
                     <div className='sidebar-logout'>
                     <FaDoorOpen className="info-icon" color='white' size='18px'/>
-                    <a href="#">Sair</a>
+                    <a href="../">Sair</a>
                     </div>
                     </div>
  
