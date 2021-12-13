@@ -27,7 +27,7 @@ export default function Index() {
           <p>Vitrine Online para Anunciantes</p>
 
           <b>COMO TIRA A LETRA GRANDE?</b>
-          <p>PERGUNTA PARA A PATROA, CLICA <a href="https://wa.me/5511966935080">AQUI</a></p>
+          <p>PERGUNTA PARA A PATROA, CLICA <a href="https://wa.me/5511966935080" target='_blank'>AQUI</a></p>
           
         </div>
         </div>
